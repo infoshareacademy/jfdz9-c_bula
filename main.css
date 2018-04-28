@@ -4,7 +4,7 @@ body {
     padding: 0;
     /*font-family:*/
     font-weight: 400;
-    line-height: 1.5;
+
 
 }
 
@@ -14,25 +14,28 @@ body {
 
 .main-content {
     width: 100vw;
-    height: 100vh;
-    background-image: url("img/header2.jpg");
+    height: 90vh;
+    background-image: url("img/header.jpg");
     background-size: cover;
     -webkit-background-size: cover;
 }
 .intro {
-    background-position: center;
+    background-position: center center;
     text-align: center;
     color: white; /*inherite*/
-
+    display: flex;
+    flex-direction: column;
 }
 .intro-headline {
-    font-weight: 800;
-    font-size: 65px;
-    text-shadow: 1px 1px lightgrey;
+    font-weight: bolder;
+    font-size: 80px;
+    text-shadow: 1px 1px white;
     padding-top: 120px;
 }
 .intro-slogan {
     font-size: 35px;
+    font-weight: bolder;
+    line-height: 10px;
 }
 .intro-newsletter {
     border: 3px solid white;
@@ -46,11 +49,9 @@ body {
 }
 .intro-newsletter:hover {
     background-color: white;
-    color: darkgreen;
-    opacity: 0.4;
+    color: #435155;
+    opacity: 0.9;
 }
-
-/*  <h1 class="intro-headline">Wybierz. Zamów. Odbierz.</h1>
-    <h2 class="intro-slogan">Zobacz co oferują sklepy w Twojej okolicy. Wybierz i zamów, a my zajmiemy się resztą.</p>
-    <a class="intro-newsletter" href="#newsletter">Sprawdź już teraz</a>
-        */
+.intro-newsletter-button {
+    transform: translateY(170px);
+}
