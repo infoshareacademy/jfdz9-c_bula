@@ -1,11 +1,8 @@
-
 body {
     margin: 0;
     padding: 0;
     /*font-family:*/
     font-weight: 400;
-
-
 }
 
 #menu li {
@@ -19,6 +16,7 @@ body {
     background-size: cover;
     -webkit-background-size: cover;
 }
+
 .intro {
     background-position: center center;
     text-align: center;
@@ -26,17 +24,20 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .intro-headline {
     font-weight: bolder;
     font-size: 80px;
     text-shadow: 1px 1px white;
     padding-top: 120px;
 }
+
 .intro-slogan {
     font-size: 35px;
     font-weight: bolder;
     line-height: 10px;
 }
+
 .intro-newsletter {
     border: 3px solid white;
     padding: 20px 30px;
@@ -47,11 +48,13 @@ body {
     text-decoration: none;
     color: white;
 }
+
 .intro-newsletter:hover {
     background-color: white;
     color: #435155;
     opacity: 0.9;
 }
+
 .intro-newsletter-button {
     transform: translateY(170px);
 }
