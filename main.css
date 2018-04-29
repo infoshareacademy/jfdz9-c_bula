@@ -1,0 +1,40 @@
+header {
+    background-image: url("królewna.jpg");
+    height: 70vh;
+    background-size: cover;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a:link, a:visited{
+    front-weight: bold;
+    color: black;
+    background-color:white;
+    width: 220px;
+    text-align: right;
+    padding: 4px;
+    text-transform:uppercase;text-decoration: none;
+}
+a:hover,a:active{
+    background-color: #B3BBBC;
+    text-decoration-line: underline;
+    text-decoration-color: #C3D330;
+}
+li{
+    float: right;
+}
+.logo img
+{
+    width: 30px;
+    height: auto;
+    float: left;
+}
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
