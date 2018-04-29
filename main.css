@@ -1,24 +1,12 @@
 body {
-    /*background-color: bisque;*/
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-
-/*.container {*/
-    /*!*border: 2px solid red;*!*/
-    /*background-color: white;*/
-    /*height: 300px;*/
-    /*margin-top: 500px;*/
-/*}*/
 /* 4 Boxes Icons*/
 .boxes{
     margin-top: 1.25em;
-    /*background-color: white;*/
-    /*border: 2px solid blue;*/
-
 }
 .boxes .box{
     float:left;
