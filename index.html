@@ -38,13 +38,18 @@
     </article>
 </section>
 
+<!--Paweł - Newsletter, podanie maila i imienia-->
+
 <section class="newsletter">
-    <!--Paweł - Newsletter, podanie maila i imienia-->
-    <form>
-        <h3>Wpisz swój adres e-mail: </h3><br>
-        <input type="email"><br>
-        <h3>Wpisz swoje imię: </h3><br>
-        <input type="text"><br>
+    <form action="http://c-bula.pl/newsletter.php">
+        <label for="name">Twoje imię: </label><br>
+        <input type="text" id="name" required="required" pattern="[A-ZŁŚŻ]{1}[a-z,ą,ę,ć,ń,ó,ś,ł]{2,15}"
+               title="Wprowadź poprawnie imię zaczynając od wielkiej litery (3-15 liter)"><br>
+        <label for="email">E-mail: </label><br>
+        <input type="email" id="email" required="required" pattern="[a-z0-9_.-]+@[a-z0-9_.-]+\.\w{2,4}"
+               title="Wprowadź poprawny adres e-mail"><br>
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Wyczyść">
     </form>
 </section>
 

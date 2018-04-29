@@ -1,0 +1,51 @@
+/*sekcja newsletter*/
+
+.newsletter form{
+    background-color: white;
+    padding: 50px;
+    border-radius: 50px;
+    float: right;
+    margin-right: 100px;
+    display: inline;
+}
+
+.newsletter label, input, {
+    background-color: white;
+}
+
+.newsletter input {
+    margin: 10px 0 10px 0;
+}
+
+.newsletter input {
+    width: 250px;
+    background-color: white;
+}
+
+.newsletter input[type=submit], input[type=reset] {
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.newsletter input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #d3fffa;
+}
+
+.newsletter input[type=text]:valid, input[type=email]:valid {
+    background-color: #a4e6ba;
+}
+
+.newsletter input[type=text]:invalid, input[type=email]:invalid {
+    background-color: #ffc6cc;
+}
+
+.newsletter h1 {
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+/*sekcja newsletter*/
