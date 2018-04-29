@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <nav>
@@ -41,6 +42,7 @@
 <!--Paweł - Newsletter, podanie maila i imienia-->
 
 <section class="newsletter">
+    <div class="formularz">
     <form action="http://c-bula.pl/newsletter.php">
         <label for="name">Twoje imię: </label><br>
         <input type="text" id="name" required="required" pattern="[A-ZŁŚŻ]{1}[a-z,ą,ę,ć,ń,ó,ś,ł]{2,15}"
@@ -50,6 +52,7 @@
                title="Wprowadź poprawny adres e-mail"><br>
         <input type="submit" value="Wyślij">
         <input type="reset" value="Wyczyść">
+    </div>
     </form>
 </section>
 
