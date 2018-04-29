@@ -1,8 +1,10 @@
 body {
-    margin: 0;
+    margin: 0 auto;
+    font-size: 14px;
     padding: 0;
     /*font-family:*/
     font-weight: 400;
+    width: 80%;
 }
 
 #menu li {
@@ -82,6 +84,22 @@ ul {
     opacity: 0.9;
 }
 
+.newsletter {
+    max-width: 100%;
+    height: auto;
+    background-color: gray;
+    padding: 3rem;
+}
+
+.formularz {
+    background-color: white;
+    border-radius: 1.8rem;
+    padding: 3rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*newsletter style*/
 .intro-newsletter-button {
     transform: translateY(8.6rem);
 }
@@ -111,11 +129,6 @@ li{
 .row {
     max-width: 1200px;
     margin: auto;
-}
-body {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* 4 Boxes Icons*/
