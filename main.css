@@ -9,12 +9,16 @@ body {
     display: inline-block;
 }
 
+/* HEADER */
 .main-content {
     width: 100vw;
     height: 90vh;
     background-image: url("img/header.jpg");
     background-size: cover;
     -webkit-background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro {
@@ -23,31 +27,48 @@ body {
     color: white; /*inherite*/
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-headline {
     font-weight: bolder;
-    font-size: 80px;
-    text-shadow: 1px 1px white;
-    padding-top: 120px;
+    font-size: 5rem;
+    text-shadow: 1px 1px #2B4819;
+    height: 10rem;
+    width: 100%;
+    background-color: rgba(43, 72, 25, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
 }
 
 .intro-slogan {
-    font-size: 35px;
+    font-size: 2.2rem;
     font-weight: bolder;
-    line-height: 10px;
+    line-height: 2.6rem;
+    width: 100%;
+    height: 8rem;
+    margin: 0 auto;
+    background-color: rgba(43,72,25,0.5);
+    text-shadow: 1px 1px #2B4819;
+    display: flex;
+    align-items: center;
+   justify-content: center;
 }
 
 .intro-newsletter {
-    border: 3px solid white;
-    padding: 20px 30px;
-    font-size: 25px;
+    /*border: 5px solid white;*/
+    padding: 1.25rem 4rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    background-color: transparent;
+    background-color: #7AAA42;
     letter-spacing: 1px;
     text-decoration: none;
     color: white;
-}
+    text-transform: uppercase;
+    border-radius: 10px 10px;
+ }
 
 .intro-newsletter:hover {
     background-color: white;
@@ -56,5 +77,5 @@ body {
 }
 
 .intro-newsletter-button {
-    transform: translateY(170px);
+    transform: translateY(8.6rem);
 }
