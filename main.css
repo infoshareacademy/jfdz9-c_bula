@@ -6,13 +6,14 @@ body {
 
 }
 
-/* 4 Boxes Icons*/
+
 /*.container {*/
     /*!*border: 2px solid red;*!*/
     /*background-color: white;*/
     /*height: 300px;*/
     /*margin-top: 500px;*/
 /*}*/
+/* 4 Boxes Icons*/
 .boxes{
     margin-top: 1.25em;
     /*background-color: white;*/
@@ -31,11 +32,12 @@ body {
 .boxes .box img{
     width: 12.5em;
 }
-
+/*function password*/
 .box h2 {
     font-size: 1.6rem;
     font-family: "DejaVu Sans Light";
 }
+/*information about license*/
 .information_icons {
     font-size: 0.625rem;
     float: left;
