@@ -1,10 +1,7 @@
 body {
-    margin: 0 auto;
-    font-size: 14px;
+    margin: 0;
     padding: 0;
-    /*font-family:*/
-    font-weight: 400;
-    width: 80%;
+    font-size: 16px;
 }
 
 #menu li {
@@ -12,78 +9,82 @@ body {
 }
 
 /* HEADER */
-.main-content {
-    width: 100vw;
-    height: 90vh;
-    background-image: url("img/header.jpg");
-    background-size: cover;
-    -webkit-background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.intro {
-    background-position: center center;
+.intro-slide {
+    position: relative;
     text-align: center;
-    color: white; /*inherite*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
-.intro-headline {
-    font-weight: bolder;
-    font-size: 5rem;
-    text-shadow: 1px 1px #2B4819;
-    height: 10rem;
-    width: 100%;
-    background-color: rgba(43, 72, 25, 0.5);
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
+.carousel img {
+    max-height: calc(100vh - 90px); /*zmienic 80px na wysokosc nav aby slider byl na wysokosc ekranu*/
 }
 
-.intro-slogan {
-    font-size: 2.2rem;
-    font-weight: bolder;
-    line-height: 2.6rem;
-    width: 100%;
-    height: 8rem;
-    margin: 0 auto;
-    background-color: rgba(43,72,25,0.5);
-    text-shadow: 1px 1px #2B4819;
-    display: flex;
-    align-items: center;
-   justify-content: center;
-}
-
-.intro-newsletter {
-    /*border: 5px solid white;*/
-    padding: 1.25rem 4rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    background-color: #7AAA42;
-    letter-spacing: 1px;
-    text-decoration: none;
+.intro-header {
+    position: absolute;
     color: white;
-    text-transform: uppercase;
-    border-radius: 10px 10px;
- }
-
-.intro-newsletter:hover {
-    background-color: white;
-    color: #435155;
-    opacity: 0.9;
+    background: RGBA(0, 0, 0, 0.7);
+    padding: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
 }
 
+.intro-header h1 {
+    text-transform: uppercase;
+    margin-bottom: 1.6875rem;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.intro-header p {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    padding-bottom: 73px;
+
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.intro-btn {
+    position: absolute;
+    z-index: 4;
+    bottom: -44px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-btn a {
+
+    padding: 0.7em calc(0.7em * 1.2);
+    display: inline-block;
+    border: 3px solid transparent;
+    position: relative;
+    font-size: 1.5em;
+    cursor: pointer;
+    letter-spacing: 0.07em;
+}
+
+.intro-btn a .text {
+
+    transform: translate3d(0, 0.7em, 0);
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*newsletter style*/
 .newsletter {
     max-width: 100%;
     height: auto;
@@ -99,64 +100,66 @@ ul {
     margin: 0 auto;
 }
 
-/*newsletter style*/
-.intro-newsletter-button {
-    transform: translateY(8.6rem);
-}
-a:link, a:visited{
+.navbar a:link,
+.navbar a:visited {
     front-weight: bold;
     color: black;
-    background-color:white;
+    background-color: white;
     width: 220px;
     text-align: right;
     padding: 4px;
-    text-transform:uppercase;text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
 }
-a:hover,a:active{
+
+.navbar a:hover,
+.navbar a:active {
     background-color: #B3BBBC;
     text-decoration-line: underline;
     text-decoration-color: #C3D330;
 }
-li{
+
+li {
     float: right;
 }
-.logo img
-{
+
+.logo img {
     width: 30px;
     height: auto;
     float: left;
 }
-.row {
-    max-width: 1200px;
-    margin: auto;
-}
 
 /* 4 Boxes Icons*/
-.boxes{
+.boxes {
     margin-top: 1.25em;
 }
-.boxes .box{
-    float:left;
+
+.boxes .box {
+    float: left;
     text-align: center;
-    width:23%;
+    width: 23%;
     padding: 0.625rem;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1.25rem;
 }
-.boxes .box img{
+
+.boxes .box img {
     width: 12.5em;
 }
+
 /*function password*/
 .box h2 {
     font-size: 1.6rem;
     font-family: "DejaVu Sans Light";
 }
+
 /*information about license*/
 .information_icons {
     font-size: 0.625rem;
     float: left;
 }
+
 .information_icons a {
     text-decoration: none;
     color: black;
