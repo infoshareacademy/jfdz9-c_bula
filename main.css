@@ -131,36 +131,33 @@ li {
 
 /* 4 Boxes Icons*/
 .boxes {
-    margin-top: 1.25em;
+    margin-top: 2em;
+    margin-bottom: 1rem;
 }
-
-.boxes .box {
-    float: left;
+.box {
     text-align: center;
-    width: 23%;
-    padding: 0.625rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1.25rem;
+    margin-top: 1rem;
 }
 
-.boxes .box img {
-    width: 12.5em;
-}
-
-/*function password*/
 .box h2 {
     font-size: 1.6rem;
     font-family: "DejaVu Sans Light";
+    text-align: center;
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+    /*text-shadow: 2px 2px #BDB4B4;*/
+    text-shadow: 2px 2px 5px #938B8B;
+}
+.box img {
+    margin-top: 1rem;
+}
+.box:hover {
+    background:#FBFAFA;
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+    transition-timing-function: ease-in-out;
+    border-radius:40px;
+
 }
 
-/*information about license*/
-.information_icons {
-    font-size: 0.625rem;
-    float: left;
-}
 
-.information_icons a {
-    text-decoration: none;
-    color: black;
-}
