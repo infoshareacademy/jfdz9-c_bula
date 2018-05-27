@@ -218,10 +218,14 @@ li {
 .boxes {
     margin-top: 2em;
     margin-bottom: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+
 }
 .box {
     text-align: center;
     margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .box h2 {
@@ -230,19 +234,85 @@ li {
     text-align: center;
     margin-top: 1.6rem;
     margin-bottom: 1rem;
-    /*text-shadow: 2px 2px #BDB4B4;*/
-    text-shadow: 2px 2px 5px #938B8B;
 }
 .box img {
     margin-top: 1rem;
+    width: 50%
 }
 .box:hover {
     background:#FBFAFA;
-    transform: scale(1.05);
-    transition: .3s ease-in-out;
-    transition-timing-function: ease-in-out;
+    transform: scale(1.2);
+    transition: 0.4s ease-in-out;
     border-radius:40px;
+    text-shadow: 2px 2px 5px #7AAA42;
+}
 
+/*ABOUT-US*/
+.about-us-countainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.about-us-container-person {
+    width: 100%;
+    height: 560px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    background: #7AAA42;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.person-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20px;
+    transition: all 0.4s ease-in-out ;
+}
+.about-us-container-person:hover .person-img {
+    transform: scale(1.1);
+}
+.about-us-container-person h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about-us-container-person p {
+    font-size: 14px;
+    margin: 20px 10px 10px 10px;
+    text-align: center;
+}
+.social-icons {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-evenly;
+    opacity: 0;
+    transition: all 0.4s ease-in-out ;
+    padding-bottom: 5px;
+}
+.about-us-container-person:hover .social-icons {
+    opacity: 1;
+}
+.about-us-container-person:hover {
+    -moz-box-shadow:    inset 0 0 15px #8C8982;
+    -webkit-box-shadow: inset 0 0 15px #8C8982;
+    box-shadow:         inset 0 0 15px #8C8982;
+}
+.social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social:hover {
+    background:#C3D330;
 }
 
 
