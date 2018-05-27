@@ -115,18 +115,80 @@
 <!--Paweł - Newsletter, podanie maila i imienia-->
 
 <section class="newsletter">
-    <div class="formularz">
+    <form class="form">
+        <h3>Zapisz się na premierę!</h3>
         <form action="http://c-bula.pl/newsletter.php">
-            <label for="name">Twoje imię: </label><br>
-            <input type="text" id="name" required="required" pattern="[A-ZŁŚŻ]{1}[a-z,ą,ę,ć,ń,ó,ś,ł]{2,15}"
-                   title="Wprowadź poprawnie imię zaczynając od wielkiej litery (3-15 liter)"><br>
-            <label for="email">E-mail: </label><br>
-            <input type="email" id="email" required="required" pattern="[a-z0-9_.-]+@[a-z0-9_.-]+\.\w{2,4}"
-                   title="Wprowadź poprawny adres e-mail"><br>
-            <input type="submit" value="Wyślij">
-            <input type="reset" value="Wyczyść">
+            <div class="form-row">
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="inputName">Imię:</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Twoje imię" required="required"
+                           pattern="[A-ZŁŚŻ]{1}[a-z,ą,ę,ć,ń,ó,ś,ł]{2,15}"
+                           title="Wprowadź poprawnie imię zaczynając od wielkiej litery (3-15 liter)">
+                </div>
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="inputEmail4">E-mail:</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Twój e-mail"
+                           required="required" pattern="[a-z0-9_.-]+@[a-z0-9_.-]+\.\w{2,4}"
+                           title="Wprowadź poprawny adres e-mail">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required="required">
+                    <label class="form-check-label" for="gridCheck">
+                        <p>Wyrażam zgodę na jednorazowe otrzymanie zaproszenia na premierę nowej aplikacji od C-BULA
+                            Developers Team (C-BULA sp. z o.o., al. Grunwaldzka 472B, 80-309 Gdańsk) na mój adres e-mail
+                            zgodnie z ustawą z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz. U. Nr
+                            144,
+                            poz 1204).</p>
+                    </label>
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-primary">Wyślij</button>
+                <button type="reset" class="btn btn-primary">Wyczyść</button>
+            </div>
+        </form>
+</section>
+<section class="funct">
+    <div class="cards">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/newsletter-img.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Więcej</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/newsletter-img.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Więcej</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/newsletter-img.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Więcej</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/newsletter-img.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Więcej</a>
+            </div>
+        </div>
     </div>
-    </form>
 </section>
 
 <section class="about-us">
