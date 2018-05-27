@@ -4,9 +4,9 @@ body {
     font-size: 16px;
 }
 
-#menu li {
-    display: inline-block;
-}
+/*#menu li {*/
+    /*display: inline-block;*/
+/*}*/
 
 /* HEADER */
 
@@ -16,7 +16,8 @@ body {
 }
 
 .carousel img {
-    max-height: calc(100vh - 90px); /*zmienic 80px na wysokosc nav aby slider byl na wysokosc ekranu*/
+    max-height: 100vh;
+    /*max-height: calc(100vh - 90px); !*zmienic 80px na wysokosc nav aby slider byl na wysokosc ekranu*!*/
 }
 
 .intro-header {
