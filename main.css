@@ -400,3 +400,15 @@ body {
 }
 
 
+/*FOOTER*/
+
+.page-footer{
+    font-size: 1em;
+    color: black;
+    margin-top: 4;
+}
+
+.footer-style{
+background-color: #B3BBBC;
+}
+
