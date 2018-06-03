@@ -184,11 +184,12 @@ h1, h2 {
 
 .navbar a:hover,
 .navbar a:active {
-    background-color: #B3BBBC;
     text-decoration-line: underline;
     text-decoration-color: #C3D330;
 }
-
+.navbar-nav{
+    justify-content: end;
+}
 li {
     float: right;
 }
