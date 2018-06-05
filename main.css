@@ -401,3 +401,41 @@ body {
 }
 
 
+/*FOOTER*/
+
+/*.page-footer{
+    font-size: 1rem;
+    color: black;
+    margin-top: 4;
+}*/
+
+.footer-style{
+background-color: #B3BBBC;
+}
+.footer-facebook{
+    margin-right: 4px;
+}
+.footer-twitter{
+     margin-right: 2px;
+ }
+.footer-content{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-shops{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-useful-links{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-contact{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-copyright {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
