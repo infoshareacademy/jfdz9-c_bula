@@ -175,7 +175,7 @@ h1, h2 {
     front-weight: bold;
     color: black;
     background-color: white;
-    width: 220px;
+    width: 170px;
     text-align: right;
     padding: 4px;
     text-transform: uppercase;
@@ -188,7 +188,7 @@ h1, h2 {
     text-decoration-color: #C3D330;
 }
 .navbar-nav{
-    justify-content: end;
+    text-align:end;
 }
 li {
     float: right;
