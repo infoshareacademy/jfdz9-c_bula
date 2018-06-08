@@ -11,77 +11,103 @@
     <!--   <link rel="stylesheet" href="https://github.com/necolas/normalize.css/">   -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel=   "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top">
-    <!-- Brand/logo -->
-    <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="logo" style="height:50px;">
-    </a>
+<!--<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top">-->
+<!--&lt;!&ndash; Brand/logo &ndash;&gt;-->
+<!--<a class="navbar-brand" href="#">-->
+<!--<img src="img/logo.png" alt="logo" style="height:50px;">-->
+<!--</a>-->
 
-    <!-- Links -->
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link 1</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link 3</a>
-        </li>
-    </ul>
-</nav>
+<!--&lt;!&ndash; Links &ndash;&gt;-->
+<!--<ul class="navbar-nav">-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" href="#">Link 1</a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" href="#">Link 2</a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" href="#">Link 3</a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</nav>-->
 
 <section class="intro">
-    <div id="carouselExampleIndicators" class="carousel slide intro-slide" data-ride="carousel">
-        <div class="container">
-            <div class="row">
-                <div class="intro-header">
+    <div id="intro-slider" class="carousel slide intro-slider" data-ride="carousel">
 
-                    <h1>Blisko. Szybko. Świeżo.</h1>
-
-                    <p>Bliskość, oszczędność czasu i świeże produkty. Rób zakupy w małych osiedlowych sklepikach niewychodząc z domu.
-                     <br /> Ty - wybierasz, My - zajmujemy się resztą.</p>
-
+        <ol class="carousel-indicators">
+            <li data-target="#intro-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#intro-slider" data-slide-to="1"></li>
+            <li data-target="#intro-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/intro-header1.jpg" alt="Slajd pierwszy">
+                <div class="carousel-caption">
+                    <h1>Blisko Szybko Świeżo</h1>
+                    <p class="d-none d-lg-block">Dzięki aplikacji zrobisz zakupy w ulubionych sklepikach osiedlowych
+                        niewychodząc z domu.
+                        <br/> Ty wybierasz, My zajmujemy się resztą.</p>
                     <div class="intro-btn">
-                        <a>
+                        <a href="#newsletter">
                             <span class="text">Sprawdź</span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
                             <span class="line -left"></span>
                             <span class="line -bottom"></span>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="img/header1.jpg" alt="Slajd pierwszy">
-            </div>
+                    </div><!--end div intro-btn-->
+                </div><!--end div carousel-caption-->
+            </div><!--end div carousel-item active-->
             <div class="carousel-item">
-                <img class="d-block w-100" src="img/header2.jpeg" alt="Slajd drugi">
-            </div>
+                <img class="d-block w-100" src="img/intro-header2.jpeg" alt="Slajd drugi">
+                <div class="carousel-caption">
+                    <h1>Blisko Szybko Świeżo</h1>
+                    <p class="d-none d-lg-block">Dzięki aplikacji zrobisz zakupy w ulubionych sklepikach osiedlowych
+                        niewychodząc z domu.
+                        <br/> Ty wybierasz, My zajmujemy się resztą.</p>
+                    <div class="intro-btn">
+                        <a href="#newsletter">
+                            <span class="text">Sprawdź</span>
+                            <span class="line -right"></span>
+                            <span class="line -top"></span>
+                            <span class="line -left"></span>
+                            <span class="line -bottom"></span>
+                        </a>
+                    </div><!--end div intro-btn-->
+                </div><!--end div carousel-caption-->
+            </div><!--end div carousel-item-->
             <div class="carousel-item">
-                <img class="d-block w-100" src="img/header3.jpg" alt="Slajd trzeci">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <img class="d-block w-100" src="img/intro-header3.jpg" alt="Slajd trzeci">
+                <div class="carousel-caption">
+                    <h1>Blisko Szybko Świeżo</h1>
+                    <p class="d-none d-lg-block">Dzięki aplikacji zrobisz zakupy w ulubionych sklepikach osiedlowych
+                        niewychodząc z domu.
+                        <br/> Ty wybierasz, My zajmujemy się resztą.</p>
+                    <div class="intro-btn">
+                        <a href="#newsletter">
+                            <span class="text">Sprawdź</span>
+                            <span class="line -right"></span>
+                            <span class="line -top"></span>
+                            <span class="line -left"></span>
+                            <span class="line -bottom"></span>
+                        </a>
+                    </div><!--end div intro-btn-->
+                </div><!--end div carousel-caption-->
+            </div><!--end div carousel-item-->
+        </div> <!--end div carousel-inner-->
+
+        <a class="carousel-control-prev" href="#intro-slider" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Poprzedni</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#intro-slider" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Następny</span>
         </a>
-    </div>
+    </div> <!-- end div id -->
 </section>
 
 <!--4 Lukasz boxes icons-->
@@ -120,7 +146,7 @@
 
 <!--Paweł - Newsletter, podanie maila i imienia-->
 
-<section class="newsletter">
+<section class="newsletter" id="newsletter">
     <form class="form">
         <h3>Zapisz się na premierę!</h3>
         <form action="http://c-bula.pl/newsletter.php">
@@ -203,92 +229,109 @@
     <div class="about-us-countainer">
         <div class="container">
             <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="about-us-container-person">
-                <img class="img-fluid person-img"  src="img/lukasz.jpg" alt=""></img>
-                <h1>Łukasz Juchniewicz</h1>
-                <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
-                <div class="social-icons">
-                    <div class="git-hub social">
-                         <a href="https://github.com/juchas019" target="_blank"><img src="img/github-logo.png" alt=""></a>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="about-us-container-person">
+                        <img class="img-fluid person-img" src="img/lukasz.jpg" alt=""></img>
+                        <h1>Łukasz Juchniewicz</h1>
+                        <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum
+                            magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras
+                            sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
+                        <div class="social-icons">
+                            <div class="git-hub social">
+                                <a href="https://github.com/juchas019" target="_blank"><img src="img/github-logo.png"
+                                                                                            alt=""></a>
+                            </div>
+                            <div class="facebook social">
+                                <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img
+                                        src="img/facebook.png" alt=""></a>
+                            </div>
+                            <div class="linkedin social">
+                                <a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"
+                                                                                        alt=""></a>
+                            </div>
+                            <div class="portfolio social">
+                                <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="facebook social">
-                        <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img src="img/facebook.png" alt=""></a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="about-us-container-person">
+                        <img class="img-fluid person-img" src="" alt=""></img>
+                        <h1>Tatiana Klenk</h1>
+                        <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum
+                            magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras
+                            sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
+                        <div class="social-icons">
+                            <div class="social">
+                                <a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>
+                            </div>
+                            <div class="facebook social">
+                                <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img
+                                        src="img/facebook.png" alt=""></a>
+                            </div>
+                            <div class="social">
+                                <a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"
+                                                                                        alt=""></a>
+                            </div>
+                            <div class="social">
+                                <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="linkedin social">
-                        <a href="https://pl.linkedin.com/"target="_blank"><img src="img/linkedin.png" alt=""></a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="about-us-container-person">
+                        <img class="img-fluid person-img" src="" alt=""></img>
+                        <h1>Marta Pieńkowska</h1>
+                        <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum
+                            magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras
+                            sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
+                        <div class="social-icons">
+                            <div class="social">
+                                <a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>
+                            </div>
+                            <div class="social">
+                                <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img
+                                        src="img/facebook.png" alt=""></a>
+                            </div>
+                            <div class="linkedin social">
+                                <a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"
+                                                                                        alt=""></a>
+                            </div>
+                            <div class="portfolio social">
+                                <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portfolio social">
-                        <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="about-us-container-person">
+                        <img class="img-fluid person-img" src="" alt=""></img>
+                        <h1>Paweł Nowicki</h1>
+                        <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum
+                            magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras
+                            sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
+                        <div class="social-icons">
+                            <div class="git-hub social">
+                                <a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>
+                            </div>
+                            <div class="facebook social">
+                                <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img
+                                        src="img/facebook.png" alt=""></a>
+                            </div>
+                            <div class="linkedin social">
+                                <a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"
+                                                                                        alt=""></a>
+                            </div>
+                            <div class="portfolio social">
+                                <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="about-us-container-person">
-                <img class="img-fluid person-img"  src="" alt=""></img>
-                <h1>Tatiana Klenk</h1>
-                <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
-                <div class="social-icons">
-                    <div class="social">
-                        <a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>
-                    </div>
-                    <div class="facebook social">
-                        <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img src="img/facebook.png" alt=""></a>
-                    </div>
-                    <div class="social">
-                        <a href="https://pl.linkedin.com/"target="_blank"><img src="img/linkedin.png" alt=""></a>
-                    </div>
-                    <div class="social">
-                        <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="about-us-container-person">
-                <img class="img-fluid person-img" src="" alt=""></img>
-                <h1>Marta Pieńkowska</h1>
-                <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
-                <div class="social-icons">
-                    <div class="social">
-                        <a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>
-                    </div>
-                    <div class="social">
-                        <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img src="img/facebook.png" alt=""></a>
-                    </div>
-                    <div class="linkedin social">
-                        <a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt=""></a>
-                    </div>
-                    <div class="portfolio social">
-                        <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="about-us-container-person">
-                <img class="img-fluid person-img"  src="" alt=""></img>
-                <h1>Paweł Nowicki</h1>
-                <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
-                <div class="social-icons">
-                    <div class="git-hub social">
-                        <a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>
-                    </div>
-                    <div class="facebook social">
-                        <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img src="img/facebook.png" alt=""></a>
-                    </div>
-                    <div class="linkedin social">
-                        <a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt=""></a>
-                    </div>
-                    <div class="portfolio social">
-                        <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
     </div>
 </section>
 
@@ -314,7 +357,8 @@
                     <!-- Facebook -->
                     <a class="fb-ic">
                         <i class="footer-facebook"> </i>
-                        <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img src="img/facebook23.png" alt=""></a>
+                        <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img
+                                src="img/facebook23.png" alt=""></a>
                     </a>
                     <!-- Twitter -->
                     <a class="tw-ic">
@@ -324,7 +368,8 @@
                     <!--Instagram-->
                     <a class="ins-ic">
                         <i class="footer-instagram"> </i>
-                        <a href="https://www.instagram.com/?hl=pl" target="_blank"><img src="img/instagram30.png" alt=""></a>
+                        <a href="https://www.instagram.com/?hl=pl" target="_blank"><img src="img/instagram30.png"
+                                                                                        alt=""></a>
                     </a>
 
                 </div>
@@ -422,7 +467,7 @@
     <!-- Footer Links -->
 
     <!-- Copyright -->
-        <div class="footer-copyright">© 2018 Copyright:
+    <div class="footer-copyright">© 2018 Copyright:
         <a href=""> C-BULA Developers Team</a>
     </div>
     <!-- Copyright -->
@@ -440,9 +485,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 <script>
-    $('.carousel').carousel({
-
-    })
+    $('.carousel').carousel({})
 </script>
 
 
