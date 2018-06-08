@@ -4,9 +4,40 @@ body {
     font-size: 16px;
 }
 
-/*#menu li {*/
-/*display: inline-block;*/
-/*}*/
+/* NAVIGATION MENU */
+
+a.nav-link {
+    text-align: center;
+}
+.navbar {
+    display: flex;
+}
+.navbar-item-list {
+    justify-content: end;
+    text-align: right;
+}
+.nav-link {
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+.navbar .nav-link:hover
+{
+    border-bottom: 3px solid #C6596F;
+    transform: scale(1.05);
+}
+
+.navbar-brand {
+    float: left;
+    margin-left: 100px;
+}
+.nav-item {
+    height: 30px;
+}
+
+
+.topnav-right {
+    float: right;
+}
 
 /* HEADER */
 
@@ -272,36 +303,6 @@ body {
     }
 }
 
-.navbar a:link,
-.navbar a:visited {
-    front-weight: bold;
-    color: black;
-    background-color: white;
-    width: 170px;
-    text-align: right;
-    padding: 4px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.navbar a:hover,
-.navbar a:active {
-    text-decoration-line: underline;
-    text-decoration-color: #C3D330;
-}
-.navbar-nav{
-    text-align:end;
-}
-li {
-    float: right;
-}
-
-.logo img {
-    width: 30px;
-    height: auto;
-    float: left;
-}
-
 /* 4 Boxes Icons*/
 .boxes {
     margin-top: 2em;
@@ -516,12 +517,6 @@ body {
 }
 
 /*FOOTER*/
-
-/*.page-footer{
-    font-size: 1rem;
-    color: black;
-    margin-top: 4;
-}*/
 
 .footer-style {
     background-color: #B3BBBC;
