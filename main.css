@@ -325,7 +325,7 @@ a.nav-link {
 }
 
 /* Lukasz 4 Boxes Icons*/
-.boxes {
+.functionality {
     margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
@@ -466,82 +466,124 @@ a.nav-link {
     }
 }
 
-/*ABOUT-US*/
-.about-us-countainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+/* Lukasz ABOUT-US*/
+
+.content {
+    padding-top: 30px;
 }
 
-.about-us-container-person {
+.team-members {
     width: 100%;
-    height: 560px;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    background: #7AAA42;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    position: relative;
+    max-height: 450px;
+    max-width: 350px;
+    cursor: pointer;
     overflow: hidden;
+    position: relative;
+    margin-bottom: 35px;
+    border-radius: 15px;
 }
 
-.person-img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 20px;
+.team-members .team-avatar {
+    position: relative;
+}
+.team-members:hover img {
+    transform: scale(1.05);
     transition: all 0.4s ease-in-out;
 }
 
-.about-us-container-person:hover .person-img {
-    transform: scale(1.1);
+.team-members .team-avatar:after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    position: absolute;
+    background: rgba(129, 129, 129, 0.1);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.about-us-container-person h1 {
+.team-members .team-avatar img {
+    display: block;
+    margin: 0 auto;
     text-align: center;
-    font-size: 28px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
-.about-us-container-person p {
+.team-members .team-desc {
+    left: auto;
+    bottom: 89px;
+    width: 100%;
+    padding: 0 43px;
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.team-members .team-desc h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.team-members .team-desc span {
+    display: block;
     font-size: 14px;
-    margin: 20px 10px 10px 10px;
-    text-align: center;
+    font-weight: 300;
+    color: #fff;
 }
 
+.team-members:hover .team-avatar:after {
+    background: rgba(47, 60, 72, 0.7);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.team-members:hover .team-desc {
+    -webkit-transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, -5%, 0);
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+}
+
+.team-members:hover .team-desc {
+    opacity: 1;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
 .social-icons {
     display: flex;
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
     justify-content: space-evenly;
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-    padding-bottom: 5px;
-}
-
-.about-us-container-person:hover .social-icons {
-    opacity: 1;
-}
-
-.about-us-container-person:hover {
-    -moz-box-shadow: inset 0 0 15px #8C8982;
-    -webkit-box-shadow: inset 0 0 15px #8C8982;
-    box-shadow: inset 0 0 15px #8C8982;
-}
-
-.social {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
+    border-top: whitesmoke 1px solid;
+    padding-top: 5px;
 }
 
 .social:hover {
-    background: #C3D330;
+    background: white;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 10px;
+}
+.team-img {
+    padding-top: 8px;
 }
 
 html {
