@@ -11,7 +11,6 @@ body {
     position: relative;
     text-align: center;
     margin-bottom: 50px;
-
     padding-top: 70px;
 }
 
@@ -20,6 +19,44 @@ body {
     font-weight: 500;
     margin: 0 0 20px;
     color: #444;
+}
+
+/* NAVIGATION MENU */
+
+a.nav-link {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar-item-list {
+    justify-content: end;
+    text-align: right;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+.navbar .nav-link:hover {
+    border-bottom: 3px solid #C6596F;
+    transform: scale(1.05);
+}
+
+.navbar-brand {
+    float: left;
+    margin-left: 100px;
+}
+
+.nav-item {
+    height: 30px;
+}
+
+.topnav-right {
+    float: right;
 }
 
 /* HEADER */
@@ -287,39 +324,9 @@ body {
     }
 }
 
-.navbar a:link,
-.navbar a:visited {
-    front-weight: bold;
-    color: black;
-    background-color: white;
-    width: 220px;
-    text-align: right;
-    padding: 4px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.navbar a:hover,
-.navbar a:active {
-    background-color: #B3BBBC;
-    text-decoration-line: underline;
-    text-decoration-color: #C3D330;
-}
-
-li {
-    float: right;
-}
-
-.logo img {
-    width: 30px;
-    height: auto;
-    float: left;
-}
-
-/* 4 Boxes Icons*/
+/* Lukasz 4 Boxes Icons*/
 .boxes {
-    margin-top: 2em;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
 
@@ -327,29 +334,28 @@ li {
 
 .box {
     text-align: center;
-    margin-top: 1rem;
     transition: all 0.3s ease-in-out;
+    margin: 1.18rem 0;
 }
 
 .box h2 {
     font-size: 1.6rem;
-    font-family: "DejaVu Sans Light";
-    text-align: center;
-    margin-top: 1.6rem;
-    margin-bottom: 1rem;
+    font-weight: 500;
+    color: black;
+    padding-top: 2rem;
 }
 
 .box img {
-    margin-top: 1rem;
-    width: 50%
+    width: 50%;
+    padding-top: 20px;
 }
 
 .box:hover {
-    background: #FBFAFA;
-    transform: scale(1.2);
+    background: #F1F1F1;
+    transform: scale(1.18);
     transition: 0.4s ease-in-out;
     border-radius: 40px;
-    text-shadow: 2px 2px 5px #7AAA42;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* DETAILS - 8 funkcjonalnocsi */
@@ -638,12 +644,6 @@ body {
 }
 
 /*FOOTER*/
-
-/*.page-footer{
-    font-size: 1rem;
-    color: black;
-    margin-top: 4;
-}*/
 
 .footer-style {
     background-color: #B3BBBC;
