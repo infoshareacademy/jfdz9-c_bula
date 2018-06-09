@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* HEADING */
@@ -582,22 +583,14 @@ a.nav-link {
     text-align: center;
     border-radius: 10px;
 }
+
 .team-img {
     padding-top: 8px;
 }
 
-html {
-    font-size: 16px;
-}
-
-body {
-    margin: 0 auto;
-    color: #2D2F30;
-}
-
 .newsletter {
     height: auto;
-    background-image: url("img/newsletter-img.jpeg");
+    background-image: url("img/1234.jpg");
     padding: 50px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -605,11 +598,11 @@ body {
 }
 
 .newsletter .form {
-    background-color: white;
-    border-radius: 25px;
-    padding: 50px;
-    width: 80%;
+    border-radius: 20px;
+    padding: 3rem;
+    width: 60%;
     margin: 0 auto;
+    background: RGBA(255, 255, 255, 0.8);
 }
 
 .form-check {
@@ -623,6 +616,7 @@ body {
 .form h3 {
     padding-bottom: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .form-buttons {
@@ -630,11 +624,16 @@ body {
     justify-content: center;
 }
 
-.btn-primary {
+.btn-form {
     margin: 10px;
     width: 100px;
     background-color: #C6596E;
     border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    transition: 0.3s;
 }
 
 .form-control:focus {
@@ -642,47 +641,34 @@ body {
     box-shadow: 0 0 10px rgba(195, 211, 48);
 }
 
-.btn-primary:hover {
+.btn-form:hover {
     border: none;
     background-color: #853D49;
+    transition: 0.3s;
 }
 
-.btn-primary:focus {
+.btn-form:focus {
     border: none;
     box-shadow: 0 0 10px rgba(195, 211, 48);
     background-color: #C3D330;
 }
 
-.btn-primary:active {
+.btn-form:active {
     border: none;
     box-shadow: 0 0 10px rgba(195, 211, 48);
     background-color: #C3D330;
 }
 
-.btn-primary:active:hover {
+.btn-form:active:hover {
     border: none;
     box-shadow: 0 0 10px rgba(195, 211, 48);
     background-color: #C3D330;
 }
 
-.btn-primary:visited {
+.btn-form:visited {
     border: none;
     box-shadow: 0 0 10px rgba(195, 211, 48);
     background-color: #C3D330;
-}
-
-.funct {
-    background: linear-gradient(#C3D330, #7AAA42);
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-}
-
-.card {
-    margin: 50px;
-    border: none;
 }
 
 /*FOOTER*/
@@ -723,4 +709,15 @@ body {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.page-footer a {
+    color: #76c143;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    color: #C3D330;
+    transition: 0.3s;
 }
