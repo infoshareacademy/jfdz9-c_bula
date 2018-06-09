@@ -447,11 +447,14 @@ a.nav-link {
     .details-func {
         height: 210px;
     }
+    .sub-title {
+        margin-left: 30px;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
     .details-func {
-        height: 230px;
+        height: 250px;
     }
 }
 
