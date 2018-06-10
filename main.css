@@ -676,6 +676,14 @@ a.nav-link {
 
 /*FOOTER*/
 
+/*.footer-bar{*/
+    /*height:60px;*/
+/*}*/
+
+.container-footer{
+    line-height: 0.3;
+    text-align: center;
+}
 .footer-style {
     background-color: #B3BBBC;
 }
@@ -715,12 +723,121 @@ a.nav-link {
 }
 
 .page-footer a {
-    color: #76c143;
+    color: #444;
     transition: 0.3s;
     text-decoration: none;
 }
 
-.page-footer a:hover {
-    color: #C3D330;
-    transition: 0.3s;
+/*.page-footer a:hover {*/
+    /*color: #C3D330;*/
+    /*transition: 0.3s;*/
+/*}*/
+.footer-content:hover,
+.footer-useful-links:hover,
+.footer-contact:hover {
+    border-bottom: 2px solid #C6596F;
 }
+
+@media (max-width: 575px);
+    .footer-content,
+    .footer-contact,
+    .footer-useful-links{
+        margin-top: 20px;
+    }
+}
+
+}
+    /*.carousel-caption {*/
+        /*right: 10%;*/
+        /*left: 10%;*/
+    /*}*/
+
+    /*.carousel-caption h1 {*/
+        /*font-size: 2rem;*/
+    /*}*/
+
+    /*.carousel-indicators {*/
+        /*bottom: unset;*/
+    /*}*/
+
+    /*.carousel-caption {*/
+        /*top: 27%;*/
+        /*bottom: 8px;*/
+    /*}*/
+
+    /*.intro-btn {*/
+        /*bottom: -20px;*/
+    /*}*/
+
+    /*.intro-btn a .text {*/
+        /*font-size: 1.2rem;*/
+    /*}*/
+/*}*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /*.carousel-caption {*/
+        /*top: 26%;*/
+        /*bottom: 32px;*/
+    /*}*/
+
+    /*.carousel-caption h1 {*/
+        /*font-size: 2.9rem;*/
+    /*}*/
+
+    /*.intro-btn {*/
+        /*bottom: -32px;*/
+    /*}*/
+
+    /*.intro-btn a .text {*/
+        /*font-size: 1.2rem;*/
+    /*}*/
+/*}*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*.carousel-caption {*/
+        /*top: 23%;*/
+        /*bottom: 94px;*/
+    /*}*/
+
+    /*.intro-btn a .text {*/
+        /*font-size: 1.5rem;*/
+    /*}*/
+/*}*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*.carousel-caption {*/
+        /*top: 23%;*/
+        /*bottom: 56px;*/
+    /*}*/
+
+    /*.intro-btn a .text {*/
+        /*font-size: 1.5rem;*/
+    /*}*/
+
+    /*.carousel-caption h1 {*/
+        /*font-size: 3.5rem;*/
+    /*}*/
+/*}*/
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    /*.carousel-caption {*/
+        /*top: 25%;*/
+        /*bottom: 154px;*/
+    /*}*/
+/*}*/
+
+@media (min-width: 1401px) {
+    /*.carousel-caption {*/
+        /*top: 25%;*/
+        /*bottom: 238px;*/
+    /*}*/
+
+    /*.intro-btn a .text {*/
+        /*font-size: 2rem;*/
+    /*}*/
+
+    /*.carousel-caption h1 {*/
+        /*font-size: 4.7rem;*/
+        /*margin-bottom: 2.6rem;*/
+    /*}*/
+/*}*/
