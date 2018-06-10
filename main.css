@@ -611,6 +611,8 @@ a.nav-link {
     padding-top: 8px;
 }
 
+/*NEWSLETTER */
+
 .newsletter {
     height: auto;
     background-image: url("img/1234.jpg");
@@ -693,6 +695,33 @@ a.nav-link {
     box-shadow: 0 0 10px rgba(195, 211, 48);
     background-color: #C3D330;
 }
+
+@media (max-width: 575px) {
+    .newsletter .form {
+        padding: 2rem;
+        width: 100%;
+        margin: 0 auto;
+        background: RGBA(255, 255, 255, 0.8);
+        border-radius: 0px;
+    }
+    .newsletter {
+        padding: 0;
+    }
+}
+@media (min-width: 576px) and (max-width: 769px) {
+    .newsletter .form {
+        padding: 2rem;
+        width: 80%;
+        margin: 0 auto;
+        background: RGBA(255, 255, 255, 0.8);
+        border-radius: 20px;
+    }
+    .newsletter {
+        height: auto;
+        padding: 50px;
+    }
+}
+
 
 /*FOOTER*/
 
