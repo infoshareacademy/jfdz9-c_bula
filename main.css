@@ -731,15 +731,7 @@ a.nav-link {
 }
 
 @media (max-width: 575px);
-    .footer-content,
-    .footer-contact,
-    .footer-useful-links{
-        width: 100%;
-    }
     .footer-container{
         text-align: center;
+        width: 100%;
     }
-
-@media (min-width: 576px) and (max-width: 767px) {
-
-}
