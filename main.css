@@ -724,10 +724,6 @@ a.nav-link {
     text-decoration: none;
 }
 
-/*.page-footer a:hover {*/
-    /*color: #C3D330;*/
-    /*transition: 0.3s;*/
-/*}*/
 .footer-content:hover,
 .footer-useful-links:hover,
 .footer-contact:hover {
@@ -739,6 +735,9 @@ a.nav-link {
     .footer-contact,
     .footer-useful-links{
         width: 100%;
+    }
+    .footer-container{
+        text-align: center;
     }
 
 @media (min-width: 576px) and (max-width: 767px) {
