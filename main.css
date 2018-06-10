@@ -286,12 +286,12 @@ a.nav-link {
 
 @media (min-width: 1441px) {
     .carousel-caption {
-        bottom: 250px;
+        /*bottom: 250px;*/
     }
 
     .carousel-caption h1 {
         font-size: 7rem;
-        padding-bottom: 3rem;
+        padding-bottom: 0.6rem;
     }
 
     .carousel-caption p {
