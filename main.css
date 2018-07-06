@@ -83,13 +83,13 @@ a.nav-link {
     height: 100vh;
 }
 
-.carousel-caption {
+.header__content {
     top: 27%;
     bottom: 122px;
     background: RGBA(255, 255, 255, 0.6);
 }
 
-.carousel-caption h1 {
+.header__content h1 {
     text-transform: uppercase;
     margin-bottom: 1.6875rem;
     font-size: 4rem;
@@ -97,7 +97,7 @@ a.nav-link {
     color: #76c143;
 }
 
-.carousel-caption p {
+.header__content p {
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 300;
@@ -105,7 +105,7 @@ a.nav-link {
     color: #444;
 }
 
-.intro-btn {
+.header__btn {
     position: absolute;
     z-index: 4;
     bottom: -19px;
@@ -114,7 +114,7 @@ a.nav-link {
     color: #444;
 }
 
-.intro-btn a {
+.header__btn a {
     padding: 0.5em calc(0.5em * 1.2);
     display: inline-block;
     border: 3px solid transparent;
@@ -124,7 +124,7 @@ a.nav-link {
     letter-spacing: 0.07em;
 }
 
-.intro-btn a .text {
+.header__btn a .text {
 
     transform: translate3d(0, 0.2em, 0);
     display: block;
@@ -134,14 +134,14 @@ a.nav-link {
     margin-bottom: 0;
 }
 
-.intro-btn a:link,
-.intro-btn a:visited {
+.header__btn a:link,
+.header__btn a:visited {
     text-decoration: none;
     color: #444;
     background-color: transparent;
 }
 
-.intro-btn a:after {
+.header__btn a:after {
     position: absolute;
     content: "";
     bottom: -2px;
@@ -153,57 +153,57 @@ a.nav-link {
     transform-origin: left;
 }
 
-.intro-btn .line {
+.header__btn .line {
     position: absolute;
     background: #C6596F;
 }
 
-.intro-btn .line.-right, .intro-btn .line.-left {
+.header__btn .line.-right, .header__btn .line.-left {
     width: 3px;
     bottom: -2px;
     top: -2px;
     transform: scale3d(1, 0, 1);
 }
 
-.intro-btn .line.-top, .intro-btn .line.-bottom {
+.header__btn .line.-top, .header__btn .line.-bottom {
     height: 3px;
     left: -2px;
     right: -2px;
     transform: scale3d(0, 1, 1);
 }
 
-.intro-btn .line.-right {
+.header__btn .line.-right {
     right: -2px;
     transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
     transform-origin: top;
 }
 
-.intro-btn .line.-top {
+.header__btn .line.-top {
     top: -2px;
     transition: transform 0.08s linear 0.43s;
     transform-origin: left;
 }
 
-.intro-btn .line.-left {
+.header__btn .line.-left {
     left: -2px;
     transition: transform 0.08s linear 0.51s;
     transform-origin: bottom;
 }
 
-.intro-btn .line.-bottom {
+.header__btn .line.-bottom {
     bottom: -2px;
     transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
     transform-origin: right;
 }
 
-.intro-btn a:hover .text,
-.intro-btn a:active .text {
+.header__btn a:hover .text,
+.header__btn a:active .text {
     transform: translate3d(0, 0, 0);
     transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
-.intro-btn a:hover:after,
-.intro-btn a:active:after {
+.header__btn a:hover:after,
+.header__btn a:active:after {
     transform: scale3d(0, 1, 1);
     right: -2px;
     left: -2px;
@@ -211,31 +211,31 @@ a.nav-link {
     transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
 }
 
-.intro-btn a:hover .line,
-.intro-btn a:active .line {
+.header__btn a:hover .line,
+.header__btn a:active .line {
     transform: scale3d(1, 1, 1);
 }
 
-.intro-btn a:hover .line.-right,
-.intro-btn a:active .line.-right {
+.header__btn a:hover .line.-right,
+.header__btn a:active .line.-right {
     transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
     transform-origin: bottom;
 }
 
-.intro-btn a:hover .line.-top,
-.intro-btn a:active .line.-top {
+.header__btn a:hover .line.-top,
+.header__btn a:active .line.-top {
     transition: transform 0.08s linear 0.4s;
     transform-origin: right;
 }
 
-.intro-btn a:hover .line.-left,
-.intro-btn a:active .line.-left {
+.header__btn a:hover .line.-left,
+.header__btn a:active .line.-left {
     transition: transform 0.08s linear 0.48s;
     transform-origin: top;
 }
 
-.intro-btn a:hover .line.-bottom,
-.intro-btn a:active .line.-bottom {
+.header__btn a:hover .line.-bottom,
+.header__btn a:active .line.-bottom {
     transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
     transform-origin: left;
 }
@@ -279,7 +279,7 @@ a.nav-link {
         font-size: 1.6rem;
     }
 
-    .intro-btn a .text {
+    .header__btn a .text {
         font-size: 2rem;
     }
 }
@@ -298,7 +298,7 @@ a.nav-link {
         font-size: 2rem;
     }
 
-    .intro-btn a .text {
+    .header__btn a .text {
         font-size: 2.6rem;
     }
 }
