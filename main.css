@@ -696,7 +696,7 @@ a.nav-link {
 
 /*FOOTER*/
 
-.footer-container{
+.footer__container{
     line-height: 0.5
     text-align: center;
 }
@@ -712,7 +712,7 @@ a.nav-link {
     margin-right: 2px;
 }
 
-.footer-content {
+.footer__content {
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -738,20 +738,20 @@ a.nav-link {
     padding-bottom: 1rem;
 }
 
-.page-footer a {
+.page__footer a {
     color: #444;
     transition: 0.3s;
     text-decoration: none;
 }
 
-.footer-content:hover,
+.footer__content:hover,
 .footer-useful-links:hover,
 .footer-contact:hover {
     border-bottom: 2px solid #C6596F;
 }
 
 @media (max-width: 575px);
-    .footer-container{
+    .footer__container{
         text-align: center;
         width: 100%;
     }
