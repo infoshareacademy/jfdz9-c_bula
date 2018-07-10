@@ -503,11 +503,11 @@ a.nav-link {
 
 /* Lukasz ABOUT-US*/
 
-.content {
+.about-us {
     padding-top: 30px;
 }
 
-.team-members {
+.about-us__team-members {
     width: 100%;
     max-height: 500px;
     max-width: 350px;
@@ -518,16 +518,16 @@ a.nav-link {
     border-radius: 15px;
 }
 
-.team-members .team-avatar {
+.about-us__team-members .team-avatar {
     position: relative;
 }
 
-.team-members:hover img {
+.about-us__team-members:hover img {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
 }
 
-.team-members .team-avatar:after {
+.about-us__team-members .team-avatar:after {
     top: 0;
     left: 0;
     width: 100%;
@@ -540,13 +540,13 @@ a.nav-link {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.team-members .team-avatar img {
+.about-us__team-members .team-avatar img {
     display: block;
     margin: 0 auto;
     text-align: center;
 }
 
-.team-members .team-desc {
+.about-us__team-members .team-desc {
     left: auto;
     bottom: 89px;
     width: 100%;
@@ -563,7 +563,7 @@ a.nav-link {
     transition: opacity 0.3s;
 }
 
-.team-members .team-desc h4 {
+.about-us__team-members .team-desc h4 {
     font-size: 24px;
     font-weight: 600;
     margin: 0 0 10px;
@@ -571,28 +571,28 @@ a.nav-link {
     text-align: center;
 }
 
-.team-members .team-desc span {
+.about-us__team-members .team-desc span {
     display: block;
     font-size: 14px;
     font-weight: 300;
     color: #fff;
 }
 
-.team-members:hover .team-avatar:after {
+.about-us__team-members:hover .team-avatar:after {
     background: rgba(47, 60, 72, 0.7);
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.team-members:hover .team-desc {
+.about-us__team-members:hover .team-desc {
     -webkit-transform: translate3d(0, -5%, 0);
     transform: translate3d(0, -5%, 0);
     -webkit-transform: translate3d(0, -10%, 0);
     transform: translate3d(0, -10%, 0);
 }
 
-.team-members:hover .team-desc {
+.about-us__team-members:hover .team-desc {
     opacity: 1;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
