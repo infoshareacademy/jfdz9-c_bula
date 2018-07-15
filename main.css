@@ -745,7 +745,6 @@ a.nav-link {
 
 .footer__container{
     line-height: 0.5
-    text-align: center;
 }
 .footer-style {
     background-color: #B3BBBC;
@@ -792,13 +791,6 @@ a.nav-link {
     color: #444;
     transition: 0.3s;
     text-decoration: none;
-
-}
-
-.footer__content:hover,
-.footer-useful-links:hover,
-.footer-contact:hover {
-    border-bottom: 2px solid #C6596F;
 
 }
 
