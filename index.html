@@ -8,10 +8,10 @@
     <meta name="description" content="Aplikacja do robienia zakupów online w sklepach osiedlowych">
     <meta name="author" content="Tatiana Klenk - Łukasz Juchniewicz - Marta Pieńkowska - Paweł Nowicki">
     <meta name="keywords" content="sklepy osiedlowe, zakupy online, osiedle, gdańsk, gdynia, sopot">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-v4.1.1.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="main.css" rel="stylesheet" type="text/css">
+
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
@@ -45,7 +45,7 @@
     <div id="intro-slider" class="carousel slide intro-slider" data-ride="carousel">
         <div class="carousel-caption">
             <h1>Blisko Szybko Świeżo</h1>
-            <p class="d-none d-lg-block">Dzięki aplikacji zrobisz zakupy w ulubionych sklepikach osiedlowych
+            <p class="d-none d-md-block">Dzięki aplikacji zrobisz zakupy w ulubionych sklepikach osiedlowych
                 niewychodząc z domu.
                 <br/> Ty wybierasz, My zajmiemy się resztą.</p>
             <div class="intro-btn">
@@ -64,17 +64,9 @@
             <li data-target="#intro-slider" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active carosuel-item-1 min-height-100">
-
-                <!--<img class="d-block w-100" src="img/intro-header1.jpg" alt="Slajd pierwszy">-->
-
-            </div>
-            <div class="carousel-item carosuel-item-2 min-height-100">
-                <!--<img class="d-block w-100" src="img/intro-header2.jpeg" alt="Slajd drugi">-->
-            </div>
-            <div class="carousel-item carosuel-item-3 min-height-100">
-                <!--<img class="d-block w-100" src="img/intro-header3.jpg" alt="Slajd trzeci">-->
-            </div>
+            <div class="carousel-item active carosuel-item-1 min-height-100"></div>
+            <div class="carousel-item carosuel-item-2 min-height-100"></div>
+            <div class="carousel-item carosuel-item-3 min-height-100"></div>
         </div>
 
         <a class="carousel-control-prev" href="#intro-slider" role="button" data-slide="prev">
@@ -130,7 +122,7 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Łatwe zakupy</p></div>
                             <div class="description">
-                                <p>Kupowanie online jest bardzo proste a zakupy zrobisz bardziej przemyslane i
+                                <p class="description-text">Kupowanie online jest bardzo proste a zakupy zrobisz bardziej przemyslane i
                                     racjonalne z dowolnego miejsca. Aplikacja pozwala na zamówienie różnorodnych
                                     produktów z wielu sklepów osiedlowych.</p>
                             </div>
@@ -142,7 +134,7 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Regionalne produkty</p></div>
                             <div class="description">
-                                <p>W ofertach małych sklepików znajdziesz żywność ekologiczną, pochodzącą od
+                                <p class="description-text">W ofertach małych sklepików znajdziesz żywność ekologiczną, pochodzącą od
                                     lokalnych rolników i gospodarstw. Są wśród nich m.in. wędliny, owoce, warzywa,
                                     wyroby piekarnicze, miody, sery i olej. Dzięki temu możesz odnaleźć produkty
                                     wyjątkowe pod względem jakości i smaku.</p>
@@ -155,7 +147,7 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Świeże produkty</p></div>
                             <div class="description">
-                                <p>Nie bez znaczenia jest jakość towaru. Każdy docenia świeżość pieczywa, owoców i
+                                <p class="description-text">Nie bez znaczenia jest jakość towaru. Każdy docenia świeżość pieczywa, owoców i
                                     warzyw oraz mięsa i nabiału oferowanego w lokalnych sklepach. Kupując je, masz
                                     pewność, że dostarczone produkty nie zepsują się, ponieważ zamawiasz z blisko
                                     położonych sklepów na osiedlu, a czas dostawy jest
@@ -169,7 +161,7 @@
                             </div>
                             <div class="col-6"><p class="sub-title">"Tu mieszkam,<br> Tu kupuję"</p></div>
                             <div class="description">
-                                <p>Ogólnopolski program społeczny, promuje i wspiera osiedlowe sklepy o zasięgu lokalnym
+                                <p class="description-text">Ogólnopolski program społeczny, promuje i wspiera osiedlowe sklepy o zasięgu lokalnym
                                     oraz wspiera rozwój tradycyjnego handlu. Stanowią one serce każdej lokalnej
                                     społeczności, a zakupy w nich mają wiele zalet. Wspierajmy rodzimy, polski handel i
                                     produkty.</p>
@@ -182,7 +174,7 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Dostawa dodomu</p></div>
                             <div class="description">
-                                <p>Masz już dosyć dźwigania ciężkich kartonów i butelek na 4 piętro? Czemu nie miałby Ci
+                                <p class="description-text">Masz już dosyć dźwigania ciężkich kartonów i butelek na 4 piętro? Czemu nie miałby Ci
                                     przynieść ich kurier? Dostawę pod drzwi docenią przede wszystkim osoby z
                                     różnymi problemami zdrowotnymi, osoby opiekujące się dziećmi, bądź też pozbawione
                                     samochodu.</p>
@@ -195,7 +187,7 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Oszczędność czasu</p></div>
                             <div class="description">
-                                <p>Nie tracisz pieniędzy i czasu na dojazd, zwiedzanie marketu i stania w długich
+                                <p class="description-text">Nie tracisz pieniędzy i czasu na dojazd, zwiedzanie marketu i stania w długich
                                     kolejkach. Zamówienie zajmie Ci tylko chwilę, dzięki temu zaoszczędzisz dużo czasu.
                                     Zapłacisz kilkanaście złotych więcej za zakupy (koszt dostawy),
                                     ale w cenie wliczony będzie Twój komfort i czas.</p>
@@ -208,7 +200,7 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Łatwa obsługa aplikacji</p></div>
                             <div class="description">
-                                <p>Aplikacja działa na różnych urządzeniach, tj. telefonach, tabletach czy laptopach.
+                                <p class="description-text">Aplikacja działa na różnych urządzeniach, tj. telefonach, tabletach czy laptopach.
                                     Wygodna oraz intuicyjna w obsłudze. W łatwy sposób odnajdziesz potrzebny sklep w
                                     Twojej okolicy.</p>
                             </div>
@@ -220,7 +212,7 @@
                             </div>
                             <div class="col-6"><p class="sub-title">pomagaj z nami</p></div>
                             <div class="description">
-                                <p>Pomagaj! Jak? Kupione przez ciebie produkty zostaną przekazane potrzebującym. Więcej
+                                <p class="description-text">Pomagaj! Jak? Kupione przez ciebie produkty zostaną przekazane potrzebującym. Więcej
                                     informacji znajdziesz w Regulaminie.</p>
                             </div>
                         </div><!-- item -->
@@ -255,7 +247,8 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck" required="required">
                     <label class="form-check-label" for="gridCheck">
-                        <p>Wyrażam zgodę na jednorazowe otrzymanie zaproszenia na premierę <strong>(10.07.2018)</strong> nowej aplikacji od C-BULA
+                        <p>Wyrażam zgodę na jednorazowe otrzymanie zaproszenia na premierę <strong>(10.07.2018)</strong>
+                            nowej aplikacji od C-BULA
                             Developers Team (C-BULA sp. z o.o., al. Grunwaldzka 472B, 80-309 Gdańsk) na mój adres e-mail
                             zgodnie z ustawą z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz. U. Nr
                             144,
@@ -272,13 +265,13 @@
 </section>
 <!--Lukasz - ABOUT US-->
 
-<div class="container content" id="about-us">
+<div class="container about-us" id="about-us">
     <div class="heading">
         <h2>Zespół <strong>C-Bula</strong></h2>
     </div>
     <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="team-members">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="about-us__team-members">
                 <div class="team-avatar">
                     <img class="img-responsive center-block" src="img/lukasz.jpg" alt="">
                 </div>
@@ -287,20 +280,25 @@
                     <span>Z wykształcenia Informatyk. Kibic sportowy. Wolny czas spędza na siłowni. Lubi czytać, słucha muzyki filmowej, interesuje go astronomia. Od niedawna próbuje sił we Front-Endzie.</span>
                     <div class="social-icons">
                         <div class="git-hub social">
-                            <a href="https://github.com/juchas019" target="_blank"><img class="team-img" src="img/github-logo.png" alt=""></a>
+                            <a href="https://github.com/juchas019" target="_blank"><img class="team-img"
+                                                                                        src="img/github-logo.png"
+                                                                                        alt=""></a>
                         </div>
                         <div class="linkedin social">
-                            <a href="https://www.linkedin.com/in/%C5%82ukasz-juchniewicz-091538164/" target="_blank"><img class="team-img" src="img/linkedin.png" alt=""></a>
+                            <a href="https://www.linkedin.com/in/%C5%82ukasz-juchniewicz-091538164/"
+                               target="_blank"><img class="team-img" src="img/linkedin.png" alt=""></a>
                         </div>
                         <div class="portfolio social">
-                            <a href="https://github.com/juchas019/portfolio" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
+                            <a href="https://juchas019.github.io/portfolio/" target="_blank"><img class="team-img"
+                                                                                                  src="img/resume.png"
+                                                                                                  alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="team-members">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="about-us__team-members">
                 <div class="team-avatar">
                     <img class="img-responsive" src="img/tatiana.jpg" alt="">
                 </div>
@@ -309,10 +307,13 @@
                     <span>Absolwentka E-biznesu na UG. Obecnie HR-ka. Lubi aktywnie spędzać czas, szczególnie na świeżym powietrzu. Ciągle szuka nowych zajęć i wrażeń.</span>
                     <div class="social-icons">
                         <div class="git-hub social">
-                            <a href="https://github.com/tklenk" target="_blank"><img class="team-img" src="img/github-logo.png" alt=""></a>
+                            <a href="https://github.com/tklenk" target="_blank"><img class="team-img"
+                                                                                     src="img/github-logo.png"
+                                                                                     alt=""></a>
                         </div>
                         <div class="linkedin social">
-                            <a href="https://www.linkedin.com/in/tatiana-klenk-3467a845/" target="_blank"><img class="team-img" src="img/linkedin.png" alt=""></a>
+                            <a href="https://www.linkedin.com/in/tatiana-klenk-3467a845/" target="_blank"><img
+                                    class="team-img" src="img/linkedin.png" alt=""></a>
                         </div>
                         <div class="portfolio social">
                             <a href="" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
@@ -321,8 +322,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="team-members">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="about-us__team-members">
                 <div class="team-avatar">
                     <img class="img-responsive" src="img/marta.jpg" alt="">
                 </div>
@@ -331,10 +332,13 @@
                     <span>Poczatkująca Front-End developerka. Wielbicielka mango i czekolady. W wolnych chwilach lubi spędzać czas z przyjaciółmi, siedziec na słońcu i cieszyć się chwilą.</span>
                     <div class="social-icons">
                         <div class="git-hub social">
-                            <a href="https://github.com/PienkowskaMarta" target="_blank"><img class="team-img" src="img/github-logo.png" alt=""></a>
+                            <a href="https://github.com/PienkowskaMarta" target="_blank"><img class="team-img"
+                                                                                              src="img/github-logo.png"
+                                                                                              alt=""></a>
                         </div>
                         <div class="linkedin social">
-                            <a href="https://pl.linkedin.com/in/marta-pie%C5%84kowska-7b173454" target="_blank"><img class="team-img" src="img/linkedin.png" alt=""></a>
+                            <a href="https://pl.linkedin.com/in/marta-pie%C5%84kowska-7b173454" target="_blank"><img
+                                    class="team-img" src="img/linkedin.png" alt=""></a>
                         </div>
                         <div class="portfolio social">
                             <a href="" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
@@ -343,8 +347,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="team-members">
+        <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-1">
+            <div class="about-us__team-members">
                 <div class="team-avatar">
                     <img class="img-responsive" src="img/pawel.jpg" alt="">
                 </div>
@@ -353,10 +357,38 @@
                     <span>Marzyciel, romantyk lubiący włoską muzykę i komiksy z Kapitanem Żbikiem. Grafik, początkujący front-end developer. Po godzinach amatorski beatmaker oraz (niestety) fan polskiej piłki kopanej.</span>
                     <div class="social-icons">
                         <div class="git-hub social">
-                            <a href="https://github.com/nowicki-pawel" target="_blank"><img class="team-img" src="img/github-logo.png" alt=""></a>
+                            <a href="https://github.com/nowicki-pawel" target="_blank"><img class="team-img"
+                                                                                            src="img/github-logo.png"
+                                                                                            alt=""></a>
                         </div>
                         <div class="linkedin social">
-                            <a href="https://www.linkedin.com/in/pawe%C5%82-nowicki-ab80a5166/" target="_blank"><img class="team-img" src="img/linkedin.png" alt=""></a>
+                            <a href="https://www.linkedin.com/in/pawe%C5%82-nowicki-ab80a5166/" target="_blank"><img
+                                    class="team-img" src="img/linkedin.png" alt=""></a>
+                        </div>
+                        <div class="portfolio social">
+                            <a href="https://nowicki-pawel.github.io/portfolio-beta/" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="about-us__team-members">
+                <div class="team-avatar">
+                    <img class="img-responsive" src="img/pawl_kieno.jpg" alt="">
+                </div>
+                <div class="team-desc">
+                    <h4>Paweł Kieno</h4>
+                    <span>Front end developer pasjonujący się grafiką trójwymiarową oraz wszelkiego rodzaju animacją i silnikami graficznymi związanymi z nią. W wolnym czasie spędzając na grach kompetetywnych i próbie odnowy statusu "pro".</span>
+                    <div class="social-icons">
+                        <div class="git-hub social">
+                            <a href="https://github.com/sillywet" target="_blank"><img class="team-img"
+                                                                                       src="img/github-logo.png"
+                                                                                       alt=""></a>
+                        </div>
+                        <div class="linkedin social">
+                            <a href="https://www.linkedin.com/" target="_blank"><img
+                                    class="team-img" src="img/linkedin.png" alt=""></a>
                         </div>
                         <div class="portfolio social">
                             <a href="" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
@@ -476,21 +508,13 @@
 
 </footer>
 
+<script src="./js/carousel.js"></script>
+<script src="./js/jquery-v3.3.1.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/smooth-scroll.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-<script>
-    $('.carousel').carousel({
-        interval: 10000
-    })
-</script>
+
 
 
 </body>
