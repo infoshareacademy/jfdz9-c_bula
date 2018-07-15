@@ -87,6 +87,7 @@ a.nav-link {
     top: 27%;
     bottom: 122px;
     background: RGBA(255, 255, 255, 0.6);
+    z-index: 1;
 }
 
 .carousel-caption h1 {
@@ -855,4 +856,50 @@ a.nav-link {
         text-align: center;
         width: 100%;
     }
+}
+
+/*#cookies {*/
+    /*height: 300px;*/
+    /*width: 70%;*/
+    /*border: 1px solid black;*/
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    /*background: greenyellow;*/
+    /*!*visibility: hidden;*!*/
+/*}*/
+
+/*.cookie--visible {*/
+    /*bottom: 0;*/
+/*}*/
+
+.cookie {
+    position: fixed;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 -2px 12px 1px hsla(0,0%,80%,.8);
+    z-index: 15;
+}
+.cookie__wrapper {
+    padding: 35px 20px;
+}
+.cookie__text {
+    font-size: 20px;
+}
+/*.cookie__button {*/
+    /*border: none;*/
+    /*margin: 10px;*/
+    /*width: 160px;*/
+    /*background: #C6596E;*/
+    /*color: white;*/
+    /*border-radius: 5px;*/
+    /*font-weight: bold;*/
+    /*padding: 5px;*/
+    /*transition: 0.3s;*/
+/*}*/
+
+.cookie__button {
+    width: 160px;
 }
