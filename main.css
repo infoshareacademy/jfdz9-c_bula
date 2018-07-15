@@ -60,6 +60,13 @@ a.nav-link {
     float: right;
 }
 
+@media screen and (max-width: 575px) {
+    .navbar .nav-link:hover {
+        border-bottom-width: 0px;
+    }
+}
+
+
 /* HEADER */
 
 .carosuel-item-1 {
