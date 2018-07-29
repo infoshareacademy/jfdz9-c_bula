@@ -749,8 +749,9 @@ a.nav-link {
 }
 .go-top {
     position:fixed;
-    bottom:15px;
-    right:20px;
+    transform: scale(2);
+    bottom:40px;
+    right:35px;
     opacity:0.8;
 }
 
