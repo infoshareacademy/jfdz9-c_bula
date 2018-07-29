@@ -230,12 +230,14 @@
 
 <!--Paweł - Newsletter, podanie maila i imienia-->
 <section class="newsletter" id="newsletter">
-    <form class="form heading">
+    <div class="form heading">
         <h2>Zapisz się na <b>premierę!</b></h2>
-        <form action="http://c-bula.pl/newsletter.php">
+        <form action="https://formspree.io/cebula@gmail.com"
+              method="POST">
             <div class="form-row">
                 <div class="form-group col-md-6 col-sm-12">
                     <label for="inputName"></label>
+                    <input type="hidden" name="_next" value="game.html" />
                     <input type="text" class="form-control" id="inputName" placeholder="Twoje imię" required="required"
                            pattern="[A-ZŁŚŻ]{1}[a-z,ą,ę,ć,ń,ó,ś,ł]{2,15}"
                            title="Wprowadź poprawnie imię zaczynając od wielkiej litery (3-15 liter)">
@@ -265,7 +267,7 @@
                 <button type="reset" class="btn-form">Wyczyść</button>
             </div>
         </form>
-    </form>
+    </div>
 </section>
 <!--Lukasz - ABOUT US-->
 

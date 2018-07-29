@@ -764,6 +764,8 @@ a.nav-link {
     bottom:40px;
     right:35px;
     opacity:0.8;
+    display: none;
+
 }
 
 .go-top:hover {

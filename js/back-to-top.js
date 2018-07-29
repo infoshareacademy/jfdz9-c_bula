@@ -14,7 +14,8 @@ $(function(){
         }
     });
     $("#scroll-to-top").click(function(e){
+        console.log(e)
         e.preventDefault();
-        $('html, body').animate({scrollTop:0}, 1500);
+        $('html, body').animate({scrollTop:0}, 900);
     });
 });
