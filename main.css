@@ -30,6 +30,7 @@ a.nav-link {
 
 .navbar {
     display: flex;
+    box-shadow: 0 -2px 12px 1px hsla(0,0%,80%,.8);
 }
 
 .navbar-item-list {
