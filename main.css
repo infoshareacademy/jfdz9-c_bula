@@ -758,7 +758,17 @@ a.nav-link {
         padding: 50px;
     }
 }
+.go-top {
+    position:fixed;
+    transform: scale(2);
+    bottom:40px;
+    right:35px;
+    opacity:0.8;
+}
 
+.go-top:hover {
+    opacity:1;
+}
 /*FOOTER*/
 
 .footer__container{
