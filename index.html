@@ -15,6 +15,15 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
+<div class="game">
+    <div class="game--hidden">
+
+        <div class="game-information">
+            <p>tu bedzie wyswietlac sie gra</p>
+        </div>
+    </div>
+</div>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="#intro-slider"><img src="img/logo.png" alt="logo" style="height: 50px"></a>
@@ -230,13 +239,13 @@
 
 <!--Paweł - Newsletter, podanie maila i imienia-->
 <section class="newsletter" id="newsletter">
-    <form class="form heading">
+    <form class="form heading newsletter-form">
         <h2>Zapisz się na <b>premierę!</b></h2>
         <form action="http://c-bula.pl/newsletter.php">
             <div class="form-row">
                 <div class="form-group col-md-6 col-sm-12">
                     <label for="inputName"></label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Twoje imię" required="required"
+                    <input type="text" name="inputName" class="form-control" id="inputName" placeholder="Twoje imię" required="required"
                            pattern="[A-ZŁŚŻ]{1}[a-z,ą,ę,ć,ń,ó,ś,ł]{2,15}"
                            title="Wprowadź poprawnie imię zaczynając od wielkiej litery (3-15 liter)">
                 </div>
@@ -513,12 +522,16 @@
 
 </footer>
 
+
+
 <script src="./js/jquery-v3.3.1.min.js"></script>
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/carousel.js"></script>
 <script src="./js/smooth-scroll.js"></script>
 <script src="./js/animation_about-us.js"></script>
+<script src="./js/game-start.js"></script>
+
 
 
 
