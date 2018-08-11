@@ -3,6 +3,7 @@
     padding: 0;
 }
 .game--hidden {
+      /*aby najpierw wyswietlala sie strona C-Bula, zmienic na 'display: none' */
     /*display: none;*/
     display: block;
 }
