@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.game--hidden {
+    /*display: none;*/
+    display: block;
+}
+.game--visible {
+    display: block;
+}
+
+.game {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 1200;
+}
+.game-board {
+    position: absolute;
+    height: 80%;
+    border: 1px solid black;
+    font-family: monospace;
+    background-image: url("img-game/background.jpg");
+}
+
+.game-board span {
+    background: url(img/logo.png) no-repeat center 20px;
+    height: 102px;
+    display: block;
+}
+
+.game-board h1, .game-board p, .game-board li, #start-screen h2  {
+    text-align: center;
+}
+.game-board h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 19px;
+}
+.game-board p {
+    height: 60px;
+}
+li {
+    list-style: none;
+}
+#start-screen h2 {
+    font-size: 44px;
+}
+
+#start-screen {
+    position: absolute;
+    top: 163px;
+    width: 100%;
+    padding: 15% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#start-screen h2:hover {
+    cursor: pointer;
+    font-size: 48px;
+}
+#start {
+    position: relative;
+    top: 109px;
+    height: 100px;
+    width: 100px;
+}
+#start:hover {
+    cursor: pointer;
+    height: 110px;
+    width: 110px;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    animation-name: ahaha;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes ahaha {
+    50% {
+        transform: translateX(3px) rotate(4deg);
+    }
+    100% {
+        transform: translateX(-3px) rotate(-4deg);
+    }
+}
+#click {
+    position: relative;
+    left: 80px;
+    top: -24px;
+}

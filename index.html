@@ -11,18 +11,33 @@
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-v4.1.1.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="game.css" type="text/css">
 
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P" rel="stylesheet">
 </head>
 <body>
-<div class="game">
-    <div class="game--hidden">
-
-        <div class="game-information">
-            <p>tu bedzie wyswietlac sie gra</p>
+<section id="container" class="game">
+    <div class="row game--hidden game--visible">
+        <div class="col-md-8 game-board"> <!--game-information-->
+                    <h1><span></span></h1>
+            <p>Zbieraj punkty na pierwsze zakupy korzystając </br>z
+                aplikacji C-Bula</p>
+                    <ul>
+                        <li>Ostatni wynik: <output></output></li>
+                        <li>Najlepszy wynik: <output></output></li>
+                        <!--<li><button id="instructionbutton">Instrukcja</button></li>-->
+                        <!--<li><button id="playbutton">Zagraj</button></li>-->
+                    </ul>
+            <div id="start-screen" class="">
+                <h2 id="htp">Instrukcja gry</h2>
+                <h2 id="abt">O nas</h2>
+                <img src="./img-game/onion.png" id="start" alt="Start Game" />
+                <img src="./img-game/clickTransparent.png" id="click" alt="click" />
+            </div>
         </div>
+
     </div>
-</div>
+</section>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="mainNav">
     <div class="container">

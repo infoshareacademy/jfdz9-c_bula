@@ -14,3 +14,12 @@ var playerName;
     })
 
 })();
+
+
+$(document).ready(function(){
+    $('.game-board').css({
+        position:'absolute',
+        left: ($(window).width() - $('.game-board').outerWidth())/2,
+        top: ($(window).height() - $('.game-board').outerHeight())/2
+    });
+});

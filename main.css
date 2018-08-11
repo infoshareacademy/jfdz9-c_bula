@@ -8,12 +8,13 @@ body {
 /*gra*/
 
 .game--hidden {
-    display: none;
+    /*display: none;*/
+    display: block;
 }
 .game--visible {
     display: block;
 }
-.game-information {
+.game-board {
     position: fixed;
     height: 100vh;
     width: 100vw;
