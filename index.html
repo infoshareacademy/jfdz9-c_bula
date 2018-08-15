@@ -17,53 +17,55 @@
 </head>
 <body>
 <section id="container" class="game">
-    <div class="row game--hidden game--visible">
+    <div class="row game--hidden">
         <div class="col-md-8 game-board"> <!--game-information-->
-            <h1 class="game-logo"><span></span></h1>
-            <p>Zbieraj punkty na pierwsze zakupy korzystając </br>z
-                aplikacji C-Bula</p>
-            <ul>
-                <li>Ostatni wynik:
-                    <output></output>
-                </li>
-                <li>Najlepszy wynik:
-                    <output></output>
-                </li>
-                <!--<li><button id="instructionbutton">Instrukcja</button></li>-->
-                <!--<li><button id="playbutton">Zagraj</button></li>-->
-            </ul>
-            <div id="game-start-screen" class="">
-                <h2 id="game-instruction">Instrukcja gry</h2>
-                <h2 id="game-about">O nas</h2>
-                <img src="./img-game/onion.png" id="start" alt="Start Game"/>
-                <img src="./img-game/clickTransparent.png" id="click" alt="click"/>
-            </div>
-
-            <div id="instruction-info" class="instruction--v-h">
-                <h2 class="instruction-exit">X</h2>
-                <h2 class="instruction-title">Instrukcja</h2>
+            <div id="game-board--v-h">
+                <h1 class="game-logo"><span></span></h1>
+                <p>Zbieraj punkty na pierwsze zakupy korzystając </br>z
+                    aplikacji C-Bula</p>
                 <ul>
-                    <li>Aby przesunąć <img class="shrink-htp-img img-basket" src="./img-game/basket6.png" alt="basket"/>
-                        używaj strzałek ← → na klawiaturze
+                    <li>Ostatni wynik:
+                        <output></output>
                     </li>
-                    <div class="div">
-                        <li>Zbieraj warzywa i zdobywaj punkty:</li>
-                        <li><img class="vegetables onion" src="./img-game/onion.png" alt="cebulka"/> +2 pkt</li>
-                        <li><img class="vegetables carrot" src="./img-game/carrot.png" alt="marchewka"/> +1 pkt <img
-                                class="vegetables chilli" src="./img-game/chilli.png" alt="papryczka"/> +1 pkt <img
-                                class="vegetables cabbage" src="./img-game/cabbage.png" alt="kapusta"/> +1 pkt
-                        </li>
-                    </div>
-                    <div class="div">
-                        <li>Unikaj:</li>
-                        <li><img class="vegetables caterpillar" src="./img-game/caterpillar.png" alt="robak"/> -1 pkt
-                            <img class="vegetables ladybug" src="./img-game/ladybug.jpg" alt="biedronka"/> -1 pkt
-                        </li>
-                    </div>
-                    <div class="div">
-                        <li>Wciśnij "Q" aby wyłączyć grę</li>
-                    </div>
+                    <li>Najlepszy wynik:
+                        <output></output>
+                    </li>
                 </ul>
+                <div id="game-start-screen" class="">
+                    <h2 id="game-instruction">Instrukcja gry</h2>
+                    <!--<h2 id="game-about">O nas</h2>-->
+                    <img src="./img-game/onion.png" id="start" alt="Start Game"/>
+                    <img src="./img-game/clickTransparent.png" id="click" alt="click"/>
+                </div>
+
+                <div id="instruction-info" class="instruction--v-h">
+                    <h2 class="instruction-exit">X</h2>
+                    <h2 class="instruction-title">Instrukcja</h2>
+                    <ul>
+                        <li>Aby przesunąć <img class="shrink-htp-img img-basket" src="./img-game/basket6.png"
+                                               alt="basket"/>
+                            używaj strzałek ← → na klawiaturze
+                        </li>
+                        <div class="div">
+                            <li>Zbieraj warzywa i zdobywaj punkty:</li>
+                            <li><img class="vegetables onion" src="./img-game/onion.png" alt="cebulka"/> +2 pkt</li>
+                            <li><img class="vegetables carrot" src="./img-game/carrot.png" alt="marchewka"/> +1 pkt <img
+                                    class="vegetables chilli" src="./img-game/chilli.png" alt="papryczka"/> +1 pkt <img
+                                    class="vegetables cabbage" src="./img-game/cabbage.png" alt="kapusta"/> +1 pkt
+                            </li>
+                        </div>
+                        <div class="div">
+                            <li>Unikaj:</li>
+                            <li><img class="vegetables caterpillar" src="./img-game/caterpillar.png" alt="robak"/> -1
+                                pkt
+                                <img class="vegetables ladybug" src="./img-game/ladybug.jpg" alt="biedronka"/> -1 pkt
+                            </li>
+                        </div>
+                        <div class="div">
+                            <li>Wciśnij "Q" aby wyłączyć grę</li>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
 

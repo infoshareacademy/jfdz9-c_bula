@@ -28,9 +28,17 @@ $(document).ready(function(){
 
     $('#game-instruction').on('click', function () {
         $('#instruction-info').removeClass('instruction--v-h');
-    })
+    });
 
     $('.instruction-exit').on('click', function () {
         $('#instruction-info').addClass('instruction--v-h');
     })
+})();
+
+(function () {
+
+    $('#start').on('click', function () {
+        $('#game-board--v-h').addClass('game-board--v-h');
+    })
+
 })();

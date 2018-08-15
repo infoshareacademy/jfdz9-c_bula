@@ -119,7 +119,7 @@ li {
     text-align: right;
     margin-right: 8px;
 }
-.instruction--v-h {
+.instruction--v-h, .game-board--v-h {
     visibility: hidden;
 }
 .img-basket {
@@ -132,3 +132,5 @@ li {
 .div {
     margin-top: 30px;
 }
+
+
