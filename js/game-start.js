@@ -23,3 +23,14 @@ $(document).ready(function(){
         top: ($(window).height() - $('.game-board').outerHeight())/2
     });
 });
+
+(function () {
+
+    $('#game-instruction').on('click', function () {
+        $('#instruction-info').removeClass('instruction--v-h');
+    })
+
+    $('.instruction-exit').on('click', function () {
+        $('#instruction-info').addClass('instruction--v-h');
+    })
+})();
