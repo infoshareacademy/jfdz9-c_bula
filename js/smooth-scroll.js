@@ -6,7 +6,7 @@ $('a[href*="#"]')
             if (target.length) {
 
                 $('html').animate({
-                    scrollTop: target.offset().top - 76
+                    scrollTop: target.offset().top - 50
                 }, 1000);
             }
         }
