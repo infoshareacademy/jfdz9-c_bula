@@ -167,7 +167,7 @@ body {
     display: none;
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     width: 100%;
 }
@@ -210,11 +210,20 @@ body {
     font-size: 0;
 }
 
+.hamburger-box {
+    background-color: white;
+    border-radius: 100px;
+    width:65px;
+    height:65px;
+    align-items: center;
+    justify-content: center;
+}
+
 #hamburger-icon {
-    width: 55px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-right: 50px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -230,7 +239,7 @@ body {
 #hamburger-icon span {
     display: inline-block;
     position: absolute;
-    height: 13px;
+    height: 8px;
     width: 100%;
     background: #C6596F;
     border-radius: 10px;
@@ -244,6 +253,8 @@ body {
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
+    margin-top: 16px;
+    margin-left: 12px;
 }
 
 .open {
@@ -251,7 +262,7 @@ body {
 }
 
 #hamburger-icon span:nth-child(2),#hamburger-icon span:nth-child(3) {
-    top: 20px;
+    top: 13px;
 }
 
 #hamburger-icon span:nth-child(2) {
@@ -259,12 +270,13 @@ body {
 }
 
 #hamburger-icon span:nth-child(4) {
-    top: 40px;
+    top: 26px;
 }
 
 #hamburger-icon.open span:nth-child(1) {
     width: 0%;
     left: 50%;
+    margin-top:10px;
 }
 
 #hamburger-icon.open span:nth-child(4) {
@@ -290,35 +302,39 @@ body {
 
 #li-hamburger-logo {
     background-color: white;
-    padding-top: 6px;
+}
+
+#li-hamburger-logo img {
+    height: 80px;
+    padding-bottom: 5px;
 }
 
 #li-hamburger-1 {
     background-image: url("img/hamburger-button-1.jpg");
-    padding: 50px;
+    padding: 60px;
     background-size: 100%;
 }
 
 #li-hamburger-2 {
     background-image: url("img/hamburger-button-2.jpg");
-    padding: 50px;
+    padding: 60px;
     background-size: 100%;
 }
 
 #li-hamburger-3 {
     background-image: url("img/hamburger-button-3.jpg");
-    padding: 50px;
+    padding: 60px;
     background-size: 100%;
 }
 
 #li-hamburger-4 {
     background-image: url("img/hamburger-button-4.jpg");
-    padding: 50px;
+    padding: 60px;
     background-size: 100%;
 }
 
 #li-hamburger-5 {
-    height: 50px;
+    height: 80px;
     width: 100%;
     background: -moz-linear-gradient(top, rgba(46,47,49,0.65) 0%, rgba(0,0,0,0) 100%);
     background: -webkit-linear-gradient(top, rgba(46,47,49,0.65) 0%,rgba(0,0,0,0) 100%);
@@ -328,50 +344,34 @@ body {
 @media screen and (max-width: 425px) {
 
     #li-hamburger-1, #li-hamburger-2, #li-hamburger-3, #li-hamburger-4 {
-        padding: 40px;
-        font-size: 1.5rem;
-    }
-
-    #hamburger-icon span {
-        height: 10px;
-    }
-
-    #hamburger-icon {
-        width: 45px;
-        height: 40px;
-        position: relative;
-        margin-top: 30px;
-        margin-right: 30px;
-    }
-
-    #hamburger-icon span:nth-child(2),#hamburger-icon span:nth-child(3) {
-        top: 15px;
-    }
-
-
-    #hamburger-icon span:nth-child(4) {
-        top: 30px;
-    }
-
-    #hamburger-icon.open span:nth-child(1) {
-        width: 0%;
-        left: 50%;
-    }
-
-    #hamburger-icon.open span:nth-child(4) {
-        top: 10px;
-        width: 0%;
-        left: 50%;
-    }
-
-    #li-hamburger-logo img {
-        padding-top: 0;
-        height: 50px;
+        padding: 50px;
+        font-size: 1rem;
     }
 
     .navbar-hamburger a {
         padding: 0;
     }
+
+    .hamburger-toggle {
+        transform:scale(0.8);
+    }
+
+    #hamburger-icon {
+        margin-top: 15px;
+        margin-right: 35px;
+    }
+
+    #hamburger-icon span {
+        height: 8px;
+    }
+
+    #li-hamburger-logo img {
+        height: 80px;
+        padding-top: 20px;
+        padding-bottom:20px;
+    }
+
+
 }
 
 @media screen and (min-width: 0px) {
@@ -1101,14 +1101,25 @@ body {
         padding: 50px;
     }
 }
+
 .go-top {
     position:fixed;
-    transform: scale(2);
+    transform: scale(2.5);
     bottom:40px;
-    right:35px;
+    right:45px;
     z-index: 100;
-    color: #2E2F31;
 }
+
+@media screen and (max-width: 425px) {
+
+    .go-top {
+        transform: scale(2);
+        bottom:30px;
+        right:27px;
+    }
+
+}
+
 
 
 /*FOOTER*/
