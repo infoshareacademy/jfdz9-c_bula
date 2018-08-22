@@ -5,6 +5,22 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+/*gra*/
+
+.game--hidden {
+    /*display: none;*/
+    display: block;
+}
+.game--visible {
+    display: block;
+}
+.game-board {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1200;
+}
+
 /* HEADING */
 
 .heading {
@@ -805,7 +821,6 @@ a.nav-link {
 
 }
 
-
 @media (max-width: 575px) {
     .footer__container {
         text-align: center;
@@ -853,3 +868,4 @@ a.nav-link {
 .cookie a {
     text-decoration: none;
 }
+
