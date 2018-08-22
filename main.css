@@ -7,19 +7,20 @@ body {
 
 /*gra*/
 
-.game--hidden {
-    /*display: none;*/
-    display: block;
-}
-.game--visible {
-    display: block;
-}
-.game-board {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    z-index: 1200;
-}
+/*.game--hidden {*/
+    /*display: none;  !* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! *!*/
+    /*!*display: block;*!*/
+/*}*/
+/*.game--visible {*/
+    /*display: block;*/
+/*}*/
+/*.game-board {*/
+    /*position: fixed;*/
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+    /*z-index: 1200;*/
+    /*background: yellow;*/
+/*}*/
 
 /* HEADING */
 
