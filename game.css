@@ -5,8 +5,8 @@
 
 .game--hidden {
     /*aby najpierw wyswietlala sie strona C-Bula, zmienic na 'display: none' */
-    /*display: none;*/
-    display: block;
+    display: none;
+    /*display: block;*/
 }
 
 .game--visible {
@@ -14,7 +14,6 @@
 }
 
 .game {
-    position: fixed;
     height: 100%;
     width: 100%;
     background-color: white;
@@ -22,7 +21,6 @@
 }
 
 .game-board {
-    /*position: absolute;*/
     height: 706px;
     width: 900px;
     font-family: monospace;
