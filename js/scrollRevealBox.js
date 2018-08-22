@@ -1,0 +1,1 @@
+ScrollReveal().reveal('.box', { interval: 400 });

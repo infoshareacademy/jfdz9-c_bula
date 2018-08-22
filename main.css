@@ -345,6 +345,9 @@ a.nav-link {
     border-radius: 40px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
 }
+.load-hidden {
+    visibility: hidden;
+}
 
 /* DETAILS - 8 funkcjonalnocsi */
 
@@ -802,14 +805,15 @@ a.nav-link {
 
 }
 
-@media (max-width: 575px){
-    .footer__container{
+
+@media (max-width: 575px) {
+    .footer__container {
         text-align: center;
         width: 100%;
     }
 }
 
-
+/* ciasteczka */
 .cookie {
     position: fixed;
     bottom: 0;
@@ -849,5 +853,3 @@ a.nav-link {
 .cookie a {
     text-decoration: none;
 }
-
-
