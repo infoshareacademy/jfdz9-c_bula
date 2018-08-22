@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
 .game--hidden {
-      /*aby najpierw wyswietlala sie strona C-Bula, zmienic na 'display: none' */
+    /*aby najpierw wyswietlala sie strona C-Bula, zmienic na 'display: none' */
     /*display: none;*/
     display: block;
 }
+
 .game--visible {
     display: block;
 }
@@ -18,10 +20,11 @@
     background-color: white;
     z-index: 1200;
 }
+
 .game-board {
-    position: absolute;
+    /*position: absolute;*/
     height: 706px;
-    width: 995px;
+    width: 900px;
     font-family: monospace;
     background-image: url("img-game/background.jpg");
 }
@@ -33,20 +36,24 @@
     display: block;
 }
 
-.game-board h1, .game-board p, .game-board li, #game-start-screen h2, .instruction-title  {
+.game-board h1, .game-board p, .game-board li, #game-start-screen h2, .instruction-title {
     text-align: center;
 }
+
 .game-board h1 {
     font-size: 60px;
     font-weight: bold;
     letter-spacing: 19px;
 }
+
 .game-board p {
     height: 60px;
 }
+
 li {
     list-style: none;
 }
+
 #game-start-screen h2 {
     font-size: 44px;
 }
@@ -61,20 +68,23 @@ li {
     flex-direction: column;
     align-items: center;
 }
+
 #game-start-screen h2:hover, .instruction-exit {
     cursor: pointer;
     font-size: 47px;
 }
+
 #start {
     position: relative;
     top: 109px;
     height: 100px;
     width: 100px;
 }
+
 #start:hover {
     cursor: pointer;
-    height: 110px;
-    width: 110px;
+    height: 105px;
+    width: 105px;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
     animation-name: ahaha;
@@ -82,6 +92,7 @@ li {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
 @keyframes ahaha {
     50% {
         transform: translateX(3px) rotate(4deg);
@@ -90,10 +101,12 @@ li {
         transform: translateX(-3px) rotate(-4deg);
     }
 }
+
 #click {
     position: relative;
-    left: 80px;
-    top: -24px;
+    left: 96px;
+    top: -4px;
+    height: 58px;
 }
 
 /*instrukcja*/
@@ -106,31 +119,46 @@ li {
     right: 20px;
     left: 20px;
 }
+
 #instruction-info h2 {
     font-size: 30px;
 }
-#instruction-info li{
+
+#instruction-info li {
     font-size: 20px;
 }
+
 #instruction-info ul {
     height: auto;
 }
+
 .instruction-exit {
     text-align: right;
     margin-right: 8px;
 }
+
 .instruction--v-h, .game-board--v-h {
     visibility: hidden;
 }
+
 .img-basket {
     width: 18%;
 }
-.vegetables {
-     height: 45px;
 
+.vegetables {
+    height: 45px;
 }
+
 .div {
     margin-top: 30px;
 }
 
+/*plansza gry*/
 
+/*wyniki*/
+#game-score.current {
+    position: absolute;
+    background: url("img-game/cloud.png");
+    padding-top: 15px;
+    width: 100%;
+}

@@ -16,26 +16,32 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P" rel="stylesheet">
 </head>
 <body>
-<section id="container" class="game">
-    <div class="row game--hidden">
-        <div class="col-md-8 game-board"> <!--game-information-->
+<section class="game">
+    <div class="game--hidden">
+
+        <div class="game-board"> <!--game-information-->
+
             <div id="game-board--v-h">
-                <h1 class="game-logo"><span></span></h1>
-                <p>Zbieraj punkty na pierwsze zakupy korzystając </br>z
-                    aplikacji C-Bula</p>
-                <ul>
-                    <li>Ostatni wynik:
-                        <output></output>
-                    </li>
-                    <li>Najlepszy wynik:
-                        <output></output>
-                    </li>
-                </ul>
-                <div id="game-start-screen" class="">
+                <div class="game-title">
+                    <h1 class="game-logo"><span></span></h1>
+                    <p>Zbieraj punkty na pierwsze zakupy korzystając </br>z
+                        aplikacji C-Bula</p>
+                </div>
+                <div id="game-score">
+                    <ul>
+                        <li>Ostatni wynik:
+                            <output></output>
+                        </li>
+                        <li>Najlepszy wynik:
+                            <output></output>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="game-start-screen">
                     <h2 id="game-instruction">Instrukcja gry</h2>
-                    <!--<h2 id="game-about">O nas</h2>-->
                     <img src="./img-game/onion.png" id="start" alt="Start Game"/>
-                    <img src="./img-game/clickTransparent.png" id="click" alt="click"/>
+                    <img src="./img-game/btn-zagraj.png" id="click" alt="click"/>
                 </div>
 
                 <div id="instruction-info" class="instruction--v-h">
