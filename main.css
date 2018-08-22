@@ -95,6 +95,7 @@ a.nav-link {
     top: 27%;
     bottom: 122px;
     background: RGBA(255, 255, 255, 0.6);
+    z-index: 1;
 }
 
 .carousel-caption h1 {
@@ -706,32 +707,11 @@ a.nav-link {
 .btn-form:hover {
     border: none;
     background-color: #853D49;
+    color: white;
     transition: 0.3s;
 }
 
-.btn-form:focus {
-    border: none;
-    box-shadow: 0 0 10px rgba(195, 211, 48);
-    background-color: #C3D330;
-}
 
-.btn-form:active {
-    border: none;
-    box-shadow: 0 0 10px rgba(195, 211, 48);
-    background-color: #C3D330;
-}
-
-.btn-form:active:hover {
-    border: none;
-    box-shadow: 0 0 10px rgba(195, 211, 48);
-    background-color: #C3D330;
-}
-
-.btn-form:visited {
-    border: none;
-    box-shadow: 0 0 10px rgba(195, 211, 48);
-    background-color: #C3D330;
-}
 
 @media (max-width: 575px) {
     .newsletter .form {
@@ -825,9 +805,51 @@ a.nav-link {
 
 }
 
+
 @media (max-width: 575px) {
     .footer__container {
         text-align: center;
         width: 100%;
     }
+}
+
+/* ciasteczka */
+.cookie {
+    position: fixed;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 -2px 12px 1px hsla(0,0%,80%,.8);
+    z-index: 15;
+    display: none;
+}
+.cookie.show {
+    display: block;
+}
+.cookie__wrapper {
+    padding: 35px 20px;
+}
+.cookie__text {
+    font-size: 20px;
+}
+
+.cookie__button {
+    width: 160px;
+}
+.cookie__button a {
+    color: white;
+}
+
+.cookie__x {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    float: right;
+    margin: 15px 15px;
+}
+
+.cookie a {
+    text-decoration: none;
 }
