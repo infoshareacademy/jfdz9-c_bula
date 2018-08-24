@@ -45,9 +45,6 @@ body {
     box-shadow: 0 -2px 12px 1px hsla(0,0%,80%,.8);
 }
 
-
-/* Header */
-
 .navbar-large, .navbar-small {
     float: left;
     width: 100%;
@@ -114,7 +111,7 @@ body {
     margin-left: 100px;
 }
 
-/* header small */
+/* navbar small */
 
 .navbar-small {
     height: 50px;
@@ -134,8 +131,6 @@ body {
     margin-left: 100px;
 }
 
-/* Transitions */
-
 
 .navbar-large, .navbar-small{
     transition: .7s;
@@ -152,7 +147,7 @@ body {
     -o-transition: .7s all;
 }
 
-/*toggle*/
+/*toggle hamburger*/
 
 .navbar-hamburger {
     position: fixed;
@@ -340,6 +335,8 @@ body {
     background: -webkit-linear-gradient(top, rgba(46,47,49,0.65) 0%,rgba(0,0,0,0) 100%);
     background: linear-gradient(to bottom, rgba(46,47,49,0.65) 0%,rgba(0,0,0,0) 100%);
 }
+
+/*navigation media queries*/
 
 @media screen and (max-width: 425px) {
 
@@ -589,6 +586,25 @@ body {
 .intro-btn a:active .line.-bottom {
     transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
     transform-origin: left;
+}
+
+@media screen and (max-width: 375px) {
+    .intro-btn {
+        bottom: 1px;
+    }
+
+    .carousel-caption {
+        top:17%;
+        bottom:0;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .carousel-caption h1 {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 425px) {
