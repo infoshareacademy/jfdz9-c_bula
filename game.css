@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game--hidden {
+    /*aby najpierw wyswietlala sie strona C-Bula, zmienic na 'display: none' */
+    display: none;
+    /*display: block;*/
+}
+
+.game--visible {
+    display: block;
+}
+
+.game {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 1200;
+}
+
+.game-board {
+    height: 706px;
+    width: 900px;
+    font-family: monospace;
+    background-image: url("img-game/background.jpg");
+}
+
+.game-logo {
+    background: url(img-game/cbulagame-logo.png) no-repeat center;
+    background-size: contain;
+    height: 102px;
+    display: block;
+}
+
+.game-board h1, .game-board p, .game-board li, #game-start-screen h2, .instruction-title {
+    text-align: center;
+}
+
+.game-board h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 19px;
+}
+
+.game-board p {
+    height: 60px;
+}
+
+li {
+    list-style: none;
+}
+
+#game-start-screen h2 {
+    font-size: 44px;
+}
+
+#game-start-screen {
+    position: absolute;
+    top: 163px;
+    width: 100%;
+    padding: 15% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-start-screen h2:hover, .instruction-exit {
+    cursor: pointer;
+    font-size: 47px;
+}
+
+#start {
+    position: relative;
+    top: 109px;
+    height: 100px;
+    width: 100px;
+}
+
+#start:hover {
+    cursor: pointer;
+    height: 105px;
+    width: 105px;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    animation-name: ahaha;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ahaha {
+    50% {
+        transform: translateX(3px) rotate(4deg);
+    }
+    100% {
+        transform: translateX(-3px) rotate(-4deg);
+    }
+}
+
+#click {
+    position: relative;
+    left: 96px;
+    top: -4px;
+    height: 58px;
+}
+
+/*instrukcja*/
+#instruction-info {
+    position: absolute;;
+    border: 1px solid black;
+    background-color: #F1F6FA;
+    top: 22px;
+    bottom: 22px;
+    right: 20px;
+    left: 20px;
+}
+
+#instruction-info h2 {
+    font-size: 30px;
+}
+
+#instruction-info li {
+    font-size: 20px;
+}
+
+#instruction-info ul {
+    height: auto;
+}
+
+.instruction-exit {
+    text-align: right;
+    margin-right: 8px;
+}
+
+.instruction--v-h, .game-board--v-h {
+    visibility: hidden;
+}
+
+.img-basket {
+    width: 18%;
+}
+
+.vegetables {
+    height: 45px;
+}
+
+.div {
+    margin-top: 30px;
+}
+
+/*plansza gry*/
+
+/*wyniki*/
+#game-score.current {
+    position: absolute;
+    background: url("img-game/cloud.png");
+    padding-top: 15px;
+    width: 100%;
+}

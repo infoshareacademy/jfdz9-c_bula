@@ -11,10 +11,77 @@
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-v4.1.1.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="game.css" type="text/css">
 
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
+<section class="game">
+    <div class="game--hidden">
+
+        <div class="game-board"> <!--game-information-->
+
+            <div>
+
+                <div class="game-title">
+                    <h1 class="game-logo"><span></span></h1>
+                    <p>Zbieraj punkty na pierwsze zakupy korzystając </br>z
+                        aplikacji C-Bula</p>
+                </div>
+
+                <div id="game-score">
+                    <ul>
+                        <li>Ostatni wynik:
+                            <output></output>
+                        </li>
+                        <li>Najlepszy wynik:
+                            <output></output>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="game-start-screen">
+                    <h2 id="game-instruction">Instrukcja gry</h2>
+                    <img src="./img-game/onion.png" id="start" alt="Start Game"/>
+                    <img src="./img-game/btn-zagraj.png" id="click" alt="click"/>
+                </div>
+
+                <div id="instruction-info" class="instruction--v-h">
+                    <h2 class="instruction-exit">X</h2>
+                    <h2 class="instruction-title">Instrukcja</h2>
+                    <ul>
+                        <li>Aby przesunąć <img class="shrink-htp-img img-basket" src="./img-game/basket6.png"
+                                               alt="basket"/>
+                            używaj strzałek ← → na klawiaturze
+                        </li>
+                        <div class="div">
+                            <li>Zbieraj warzywa i zdobywaj punkty:</li>
+                            <li><img class="vegetables onion" src="./img-game/onion.png" alt="cebulka"/> +2 pkt</li>
+                            <li><img class="vegetables carrot" src="./img-game/carrot.png" alt="marchewka"/> +1 pkt <img
+                                    class="vegetables chilli" src="./img-game/chilli.png" alt="papryczka"/> +1 pkt <img
+                                    class="vegetables cabbage" src="./img-game/cabbage.png" alt="kapusta"/> +1 pkt
+                            </li>
+                        </div>
+                        <div class="div">
+                            <li>Unikaj:</li>
+                            <li><img class="vegetables caterpillar" src="./img-game/caterpillar.png" alt="robak"/> -1
+                                pkt
+                                <img class="vegetables ladybug" src="./img-game/ladybug.jpg" alt="biedronka"/> -1 pkt
+                            </li>
+                        </div>
+                        <div class="div">
+                            <li>Wciśnij "Q" aby wyłączyć grę</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="#intro-slider"><img src="img/logo.png" alt="logo" style="height: 50px"></a>
@@ -25,16 +92,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false">
                     <a class="nav-link" href="#boxes">Cechy</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false">
                     <a class="nav-link" href="#details">Szczegóły</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false">
                     <a class="nav-link" href="#newsletter">Premiera</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false">
                     <a class="nav-link" href="#about-us">O nas</a>
                 </li>
             </ul>
@@ -86,20 +157,20 @@
         <h2><strong>Cechy</strong> aplikacji</h2>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 box">
+        <div class="row load-hidden">
+            <div class="col-12 col-md-6 col-lg-3 box box-1">
                 <img src="img/grocery%20.png" alt="">
                 <h2>Łatwe zakupy</h2>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 box">
+            <div class="col-12 col-md-6 col-lg-3 box box-2">
                 <img src="img/delivery.png" alt="">
                 <h2>Dostawa do domu</h2>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 box">
+            <div class="col-12 col-md-6 col-lg-3 box box-3">
                 <img src="img/choices.png" alt="">
                 <h2>Regionalne produkty</h2>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 box">
+            <div class="col-12 col-md-6 col-lg-3 box box-4">
                 <img src="img/online-shop.png" alt="">
                 <h2>Oszczędność czasu</h2>
             </div>
@@ -122,7 +193,8 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Łatwe zakupy</p></div>
                             <div class="description">
-                                <p class="description-text">Kupowanie online jest bardzo proste a zakupy zrobisz bardziej przemyslane i
+                                <p class="description-text">Kupowanie online jest bardzo proste a zakupy zrobisz
+                                    bardziej przemyslane i
                                     racjonalne z dowolnego miejsca. Aplikacja pozwala na zamówienie różnorodnych
                                     produktów z wielu sklepów osiedlowych.</p>
                             </div>
@@ -134,7 +206,8 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Regionalne produkty</p></div>
                             <div class="description">
-                                <p class="description-text">W ofertach małych sklepików znajdziesz żywność ekologiczną, pochodzącą od
+                                <p class="description-text">W ofertach małych sklepików znajdziesz żywność ekologiczną,
+                                    pochodzącą od
                                     lokalnych rolników i gospodarstw. Są wśród nich m.in. wędliny, owoce, warzywa,
                                     wyroby piekarnicze, miody, sery i olej. Dzięki temu możesz odnaleźć produkty
                                     wyjątkowe pod względem jakości i smaku.</p>
@@ -147,7 +220,8 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Świeże produkty</p></div>
                             <div class="description">
-                                <p class="description-text">Nie bez znaczenia jest jakość towaru. Każdy docenia świeżość pieczywa, owoców i
+                                <p class="description-text">Nie bez znaczenia jest jakość towaru. Każdy docenia świeżość
+                                    pieczywa, owoców i
                                     warzyw oraz mięsa i nabiału oferowanego w lokalnych sklepach. Kupując je, masz
                                     pewność, że dostarczone produkty nie zepsują się, ponieważ zamawiasz z blisko
                                     położonych sklepów na osiedlu, a czas dostawy jest
@@ -161,7 +235,8 @@
                             </div>
                             <div class="col-6"><p class="sub-title">"Tu mieszkam,<br> Tu kupuję"</p></div>
                             <div class="description">
-                                <p class="description-text">Ogólnopolski program społeczny, promuje i wspiera osiedlowe sklepy o zasięgu lokalnym
+                                <p class="description-text">Ogólnopolski program społeczny, promuje i wspiera osiedlowe
+                                    sklepy o zasięgu lokalnym
                                     oraz wspiera rozwój tradycyjnego handlu. Stanowią one serce każdej lokalnej
                                     społeczności, a zakupy w nich mają wiele zalet. Wspierajmy rodzimy, polski handel i
                                     produkty.</p>
@@ -174,7 +249,8 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Dostawa dodomu</p></div>
                             <div class="description">
-                                <p class="description-text">Masz już dosyć dźwigania ciężkich kartonów i butelek na 4 piętro? Czemu nie miałby Ci
+                                <p class="description-text">Masz już dosyć dźwigania ciężkich kartonów i butelek na 4
+                                    piętro? Czemu nie miałby Ci
                                     przynieść ich kurier? Dostawę pod drzwi docenią przede wszystkim osoby z
                                     różnymi problemami zdrowotnymi, osoby opiekujące się dziećmi, bądź też pozbawione
                                     samochodu.</p>
@@ -187,7 +263,8 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Oszczędność czasu</p></div>
                             <div class="description">
-                                <p class="description-text">Nie tracisz pieniędzy i czasu na dojazd, zwiedzanie marketu i stania w długich
+                                <p class="description-text">Nie tracisz pieniędzy i czasu na dojazd, zwiedzanie marketu
+                                    i stania w długich
                                     kolejkach. Zamówienie zajmie Ci tylko chwilę, dzięki temu zaoszczędzisz dużo czasu.
                                     Zapłacisz kilkanaście złotych więcej za zakupy (koszt dostawy),
                                     ale w cenie wliczony będzie Twój komfort i czas.</p>
@@ -200,7 +277,8 @@
                             </div>
                             <div class="col-6"><p class="sub-title">Łatwa obsługa aplikacji</p></div>
                             <div class="description">
-                                <p class="description-text">Aplikacja działa na różnych urządzeniach, tj. telefonach, tabletach czy laptopach.
+                                <p class="description-text">Aplikacja działa na różnych urządzeniach, tj. telefonach,
+                                    tabletach czy laptopach.
                                     Wygodna oraz intuicyjna w obsłudze. W łatwy sposób odnajdziesz potrzebny sklep w
                                     Twojej okolicy.</p>
                             </div>
@@ -212,7 +290,8 @@
                             </div>
                             <div class="col-6"><p class="sub-title">pomagaj z nami</p></div>
                             <div class="description">
-                                <p class="description-text">Pomagaj! Jak? Kupione przez ciebie produkty zostaną przekazane potrzebującym. Więcej
+                                <p class="description-text">Pomagaj! Jak? Kupione przez ciebie produkty zostaną
+                                    przekazane potrzebującym. Więcej
                                     informacji znajdziesz w Regulaminie.</p>
                             </div>
                         </div><!-- item -->
@@ -226,13 +305,14 @@
 
 <!--Paweł - Newsletter, podanie maila i imienia-->
 <section class="newsletter" id="newsletter">
-    <form class="form heading">
+    <form class="form heading newsletter-form">
         <h2>Zapisz się na <b>premierę!</b></h2>
         <form action="http://c-bula.pl/newsletter.php">
             <div class="form-row">
                 <div class="form-group col-md-6 col-sm-12">
                     <label for="inputName"></label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Twoje imię" required="required"
+                    <input type="text" name="inputName" class="form-control" id="inputName" placeholder="Twoje imię"
+                           required="required"
                            pattern="[A-ZŁŚŻ]{1}[a-z,ą,ę,ć,ń,ó,ś,ł]{2,15}"
                            title="Wprowadź poprawnie imię zaczynając od wielkiej litery (3-15 liter)">
                 </div>
@@ -271,7 +351,7 @@
     </div>
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="about-us__team-members">
+            <div class="about-us__team-members about-us__photo-team-up">
                 <div class="team-avatar">
                     <img class="img-responsive center-block" src="img/lukasz.jpg" alt="">
                 </div>
@@ -298,7 +378,7 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="about-us__team-members">
+            <div class="about-us__team-members about-us__photo-team-up">
                 <div class="team-avatar">
                     <img class="img-responsive" src="img/tatiana.jpg" alt="">
                 </div>
@@ -323,7 +403,7 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="about-us__team-members">
+            <div class="about-us__team-members about-us__photo-team-up">
                 <div class="team-avatar">
                     <img class="img-responsive" src="img/marta.jpg" alt="">
                 </div>
@@ -348,7 +428,7 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-1">
-            <div class="about-us__team-members">
+            <div class="about-us__team-members about-us__photo-team-up">
                 <div class="team-avatar">
                     <img class="img-responsive" src="img/pawel.jpg" alt="">
                 </div>
@@ -366,14 +446,15 @@
                                     class="team-img" src="img/linkedin.png" alt=""></a>
                         </div>
                         <div class="portfolio social">
-                            <a href="https://nowicki-pawel.github.io/portfolio-beta/" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
+                            <a href="https://nowicki-pawel.github.io/portfolio-beta/" target="_blank"><img
+                                    class="team-img" src="img/resume.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
-            <div class="about-us__team-members">
+            <div class="about-us__team-members about-us__photo-team-up">
                 <div class="team-avatar">
                     <img class="img-responsive" src="img/pawl_kieno.jpg" alt="">
                 </div>
@@ -400,21 +481,35 @@
     </div><!-- //end row -->
 </div>
 
+<a href="#" class="go-top" title="Go top" id="scroll-to-top"><img src="img/arrow-up.svg" alt="strzałka do góry"/></a>
+
+<!-- Cookies -->
+<div id="cookie" class="cookie">
+    <a href="#" class="cookie__x btn-form cookie__close">X</a>
+    <div class="cookie__wrapper">
+        <p class="cookie__text"><strong>Uwaga!</strong> Ta strona wykorzystuje ciasteczka!</p>
+        <button class="cookie__button cookie__close btn-form"><a href="#">Lubię ciasteczka :)</a></button>
+    </div>
+</div>
+
 
 <!-- Footer-->
-
-<footer class="page-footer">
+<footer class="page__footer">
     <div class="footer-style">
         <div class="container">
+
             <!-- Grid row-->
             <div class="row py-4 d-flex align-items-center">
+
                 <!-- Grid column -->
                 <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
                     <h6 class="mb-0">Dołącz do nas na portalach społecznościowych!</h6>
                 </div>
                 <!-- Grid column -->
+
                 <!-- Grid column -->
                 <div class="col-md-6 col-lg-7 text-center text-md-right">
+
                     <!-- Facebook -->
                     <a class="fb-ic">
                         <i class="footer-facebook"> </i>
@@ -432,26 +527,35 @@
                         <a href="https://www.instagram.com/?hl=pl" target="_blank"><img src="img/instagram30.png"
                                                                                         alt=""></a>
                     </a>
+
                 </div>
                 <!-- Grid column -->
+
             </div>
             <!-- Grid row-->
+
         </div>
     </div>
+
     <!-- Footer Links -->
     <div class="container text-center text-md-left mt-5">
-        <div class="footer-container">
+        <div class="footer__container">
+
             <!-- Grid row -->
             <div class="row mt-3">
+
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-12">
+
                     <!-- Content -->
-                    <h6 class="footer-content">C-BULA</h6>
+                    <h6 class="footer__content">C-BULA</h6>
                     <hr class="deep-purple accent-2 mb-12 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>BLISKO SZYBKO ŚWIEŻO</p>
                 </div>
+
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-12">
+
                     <!-- Links -->
                     <h6 class="footer-useful-links">Przydatne</h6>
                     <hr class="deep-purple accent-2 mb-12 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -461,40 +565,51 @@
                     <p>
                         <a href="#">FAQ</a>
                     </p>
+
                 </div>
                 <!-- Grid column -->
+
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-12">
+
                     <!-- Links -->
                     <h6 class="footer-contact">Kontakt</h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
                         <i class="fa fa-home mr-1.9"></i>al. Grunwaldzka 472B, Gdańsk</p>
-                    <i class="fa fa-phone mr-1.9"></i>info@cbula.pl</p>
+                    <i class="fa fa-phone mr-1.9"></i>info@cbula.pl, tel.604 555 666</p>
                     <p>
                         <i class="fa fa-print mr-1.9"></i></p>
+
                 </div>
                 <!-- Grid column -->
+
             </div>
             <!-- Grid row -->
+
         </div>
     </div>
     <!-- Footer Links -->
+
     <!-- Copyright -->
     <div class="footer-copyright">© 2018 Copyright:
         <a href=""> C-BULA Developers Team</a>
     </div>
     <!-- Copyright -->
+
 </footer>
 
-<script src="./js/carousel.js"></script>
+
 <script src="./js/jquery-v3.3.1.min.js"></script>
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/carousel.js"></script>
 <script src="./js/smooth-scroll.js"></script>
-
-
-
+<script src="./js/animation_about-us.js"></script>
+<script src="./js/game-start.js"></script>
+<script src="./js/scrollRevealBox.js"></script>
+<script src="./js/cookies.js"></script>
+<script src="./js/back-to-top.js"></script>
 
 </body>
 <script src="menuhover.js"></script>
