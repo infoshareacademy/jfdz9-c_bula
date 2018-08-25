@@ -5,23 +5,6 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-/*gra*/
-
-/*.game--hidden {*/
-    /*display: none;  !* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! *!*/
-    /*!*display: block;*!*/
-/*}*/
-/*.game--visible {*/
-    /*display: block;*/
-/*}*/
-/*.game-board {*/
-    /*position: fixed;*/
-    /*height: 100vh;*/
-    /*width: 100vw;*/
-    /*z-index: 1200;*/
-    /*background: yellow;*/
-/*}*/
-
 /* HEADING */
 
 .heading {
@@ -59,7 +42,7 @@ body {
 }
 
 #navbar {
-    box-shadow: 0 -2px 12px 1px hsla(0,0%,80%,.8);
+    box-shadow: 0 -2px 12px 1px hsla(0, 0%, 80%, .8);
 }
 
 .navbar-large, .navbar-small {
@@ -95,7 +78,6 @@ body {
     -o-transition: 0s all;
     padding-bottom: 10px;
 }
-
 
 .navbar-large li, .navbar-small li {
     margin-right: 30px;
@@ -148,8 +130,7 @@ body {
     margin-left: 100px;
 }
 
-
-.navbar-large, .navbar-small{
+.navbar-large, .navbar-small {
     transition: .7s;
     -moz-transition: .7s;
     -webkit-transition: .7s;
@@ -225,8 +206,8 @@ body {
 .hamburger-box {
     background-color: white;
     border-radius: 100px;
-    width:65px;
-    height:65px;
+    width: 65px;
+    height: 65px;
     align-items: center;
     justify-content: center;
 }
@@ -273,7 +254,7 @@ body {
     padding: 0;
 }
 
-#hamburger-icon span:nth-child(2),#hamburger-icon span:nth-child(3) {
+#hamburger-icon span:nth-child(2), #hamburger-icon span:nth-child(3) {
     top: 13px;
 }
 
@@ -288,7 +269,7 @@ body {
 #hamburger-icon.open span:nth-child(1) {
     width: 0%;
     left: 50%;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 #hamburger-icon.open span:nth-child(4) {
@@ -310,7 +291,6 @@ body {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
 
 #li-hamburger-logo {
     background-color: white;
@@ -348,9 +328,9 @@ body {
 #li-hamburger-5 {
     height: 80px;
     width: 100%;
-    background: -moz-linear-gradient(top, rgba(46,47,49,0.65) 0%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(top, rgba(46,47,49,0.65) 0%,rgba(0,0,0,0) 100%);
-    background: linear-gradient(to bottom, rgba(46,47,49,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: -moz-linear-gradient(top, rgba(46, 47, 49, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(46, 47, 49, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(46, 47, 49, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 /*navigation media queries*/
@@ -367,7 +347,7 @@ body {
     }
 
     .hamburger-toggle {
-        transform:scale(0.8);
+        transform: scale(0.8);
     }
 
     #hamburger-icon {
@@ -382,9 +362,8 @@ body {
     #li-hamburger-logo img {
         height: 80px;
         padding-top: 20px;
-        padding-bottom:20px;
+        padding-bottom: 20px;
     }
-
 
 }
 
@@ -423,7 +402,6 @@ body {
     }
 
 }
-
 
 /* HEADER */
 
@@ -612,8 +590,8 @@ body {
     }
 
     .carousel-caption {
-        top:17%;
-        bottom:0;
+        top: 17%;
+        bottom: 0;
     }
 
 }
@@ -721,6 +699,7 @@ body {
     border-radius: 40px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
 }
+
 .load-hidden {
     visibility: hidden;
 }
@@ -1017,13 +996,13 @@ body {
 
 /*Animation about us*/
 .about-us__photo-team-up {
-    transition: all 1500ms cubic-bezier(0.2,0.4,0.6,1.0);
+    transition: all 1500ms cubic-bezier(0.2, 0.4, 0.6, 1.0);
     -webkit-transform: translate3d(0px, 300px, 0px);
 }
+
 .about-us__photo-team-up.in-view {
     transform: translate3d(0px, 0px, 0px);
 }
-
 
 /*NEWSLETTER */
 
@@ -1087,8 +1066,6 @@ body {
     transition: 0.3s;
 }
 
-
-
 @media (max-width: 575px) {
     .newsletter .form {
         padding: 2rem;
@@ -1119,10 +1096,10 @@ body {
 }
 
 .go-top {
-    position:fixed;
+    position: fixed;
     transform: scale(2.5);
-    bottom:40px;
-    right:45px;
+    bottom: 40px;
+    right: 45px;
     z-index: 100;
 }
 
@@ -1130,19 +1107,18 @@ body {
 
     .go-top {
         transform: scale(2);
-        bottom:30px;
-        right:27px;
+        bottom: 30px;
+        right: 27px;
     }
 
 }
 
-
-
 /*FOOTER*/
 
-.footer__container{
+.footer__container {
     line-height: 0.5
 }
+
 .footer-style {
     background-color: #B3BBBC;
 }
@@ -1206,16 +1182,19 @@ body {
     width: 100%;
     background: #fff;
     text-align: center;
-    box-shadow: 0 -2px 12px 1px hsla(0,0%,80%,.8);
+    box-shadow: 0 -2px 12px 1px hsla(0, 0%, 80%, .8);
     z-index: 15;
     display: none;
 }
+
 .cookie.show {
     display: block;
 }
+
 .cookie__wrapper {
     padding: 35px 20px;
 }
+
 .cookie__text {
     font-size: 20px;
 }
@@ -1223,6 +1202,7 @@ body {
 .cookie__button {
     width: 160px;
 }
+
 .cookie__button a {
     color: white;
 }
