@@ -77,6 +77,10 @@ body {
     font-size: 1rem;
 }
 
+.navbar-large span, .navbar-small span {
+    color: #969696;
+}
+
 .navbar-large li:active, .navbar-large li:hover {
     border-bottom: 4px solid #C6596F;
     transform: scale(1.05);
