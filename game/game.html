@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>C-Bulla Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="game.css" type="text/css">
+</head>
+<body>
+<div id="container" class="container">
+    <section id="intro" class="intro">
+        <h1><span></span></h1>
+        <p>Zbieraj punkty na pierwsze zakupy korzystając </br>z
+            aplikacji C-Bula</p>
+        <div class="score-test">
+            <ul>
+                <li>Ostatni wynik:
+                    <output></output>
+                </li>
+                <li>Najlepszy wynik:
+                    <output></output>
+                </li>
+            </ul>
+        </div>
+        <div class="play-test">
+            <ul>
+                <li>
+                    <h2 id="instructionbutton" class="instructionbutton">Instrukcja gry</h2>
+                </li>
+                <li class="main-content">
+                    <img src="./img-game/onion.png" id="playbutton" class="playbutton"  alt="Start Game"/>
+                    <img src="./img-game/btn-zagraj.png" id="click" class="click" alt="click"/>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="instructions" class="instructions">
+        <ul id="characters" class="characters" data-countstart="1" data-newsprite="500">
+            <li class="introdeck">
+                <p>
+                    <button class="endinstructions">X</button>
+                </p>
+                <h3>Aby przesunąć <img src="./img-game/basket6.png" alt="basket" id="player" class="player" data-increase="5"> używaj strzałek ← → na klawiaturze <span id="orientation"></span></h3>
+                <h3>Zbieraj warzywa i zdobywaj punkty:</h3>
+                <ul>
+                    <li><img src="./img-game/onion.png"  class="sprite onion" alt="Onion" data-collision="energy:5" data-type="good"> +5 pkt</li>
+                </ul>
+                <ul>
+                    <li><img src="./img-game/carrot.png" class="sprite" alt="Carrot" data-collision="energy:3" data-type="good"> +3 pkt</li>
+                    <li><img src="./img-game/chilli.png" class="sprite" alt="Chilli" data-collision="energy:2" data-type="good"> +2 pkt</li>
+                    <li><img src="./img-game/cabbage.png" class="sprite" alt="Cabbage" data-collision="energy:1" data-type="good"> +1 pkt</li>
+                </ul>
+                <h3>Unikaj:</h3>
+                <ul>
+                    <li><img src="img/worm.png" class="sprite" alt="Worm" data-collision="energy:-50" data-type="bad"> -20 pkt</li>
+                    <li><img src="img/apple.png" class="sprite" alt="Apple" data-collision="energy:-50" data-type="bad"> -10 pkt</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="playfield" class="playfield">
+        <div id="scoresinfo" class="scoresinfo">
+            <div id="energy" class="energy">Energia
+                <output>50</output>
+            </div>
+            <div id="score" class="score">Wynik
+                <output></output>
+            </div>
+        </div>
+        <canvas></canvas>
+    </section>
+
+    <section id="gameover" class="gameover">
+        <header><h1></h1></header>
+        <p>Twój wynik:
+            <output></output>
+        </p>
+        <p class="message" data-highscore="Nowy rekord!"></p>
+        <p>
+            <button id="replay" class="replay">Zagraj jeszcze raz</button>
+        </p>
+    </section>
+</div>
+<script src="game-main.js"></script>
+</body>
+</html>
