@@ -11,10 +11,75 @@
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-v4.1.1.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="game.css" type="text/css">
 
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
+<section class="game">
+    <div class="game--hidden">
+
+        <div class="game-board"> <!--game-information-->
+
+            <div>
+
+                <div class="game-title">
+                    <h1 class="game-logo"><span></span></h1>
+                    <p>Zbieraj punkty na pierwsze zakupy korzystając </br>z
+                        aplikacji C-Bula</p>
+                </div>
+
+                <div id="game-score">
+                    <ul>
+                        <li>Ostatni wynik:
+                            <output></output>
+                        </li>
+                        <li>Najlepszy wynik:
+                            <output></output>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="game-start-screen">
+                    <h2 id="game-instruction">Instrukcja gry</h2>
+                    <img src="./img-game/onion.png" id="start" alt="Start Game"/>
+                    <img src="./img-game/btn-zagraj.png" id="click" alt="click"/>
+                </div>
+
+                <div id="instruction-info" class="instruction--v-h">
+                    <h2 class="instruction-exit">X</h2>
+                    <h2 class="instruction-title">Instrukcja</h2>
+                    <ul>
+                        <li>Aby przesunąć <img class="shrink-htp-img img-basket" src="./img-game/basket6.png"
+                                               alt="basket"/>
+                            używaj strzałek ← → na klawiaturze
+                        </li>
+                        <div class="div">
+                            <li>Zbieraj warzywa i zdobywaj punkty:</li>
+                            <li><img class="vegetables onion" src="./img-game/onion.png" alt="cebulka"/> +2 pkt</li>
+                            <li><img class="vegetables carrot" src="./img-game/carrot.png" alt="marchewka"/> +1 pkt <img
+                                    class="vegetables chilli" src="./img-game/chilli.png" alt="papryczka"/> +1 pkt <img
+                                    class="vegetables cabbage" src="./img-game/cabbage.png" alt="kapusta"/> +1 pkt
+                            </li>
+                        </div>
+                        <div class="div">
+                            <li>Unikaj:</li>
+                            <li><img class="vegetables caterpillar" src="./img-game/caterpillar.png" alt="robak"/> -1
+                                pkt
+                                <img class="vegetables ladybug" src="./img-game/ladybug.jpg" alt="biedronka"/> -1 pkt
+                            </li>
+                        </div>
+                        <div class="div">
+                            <li>Wciśnij "Q" aby wyłączyć grę</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <header class="navbar-large" id="navbar">
     <nav class="navbar-container">
         <div class="nav-items">
@@ -93,20 +158,20 @@
         <h2><strong>Cechy</strong> aplikacji</h2>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 box">
+        <div class="row load-hidden">
+            <div class="col-12 col-md-6 col-lg-3 box box-1">
                 <img src="img/grocery%20.png" alt="">
                 <h2>Łatwe zakupy</h2>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 box">
+            <div class="col-12 col-md-6 col-lg-3 box box-2">
                 <img src="img/delivery.png" alt="">
                 <h2>Dostawa do domu</h2>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 box">
+            <div class="col-12 col-md-6 col-lg-3 box box-3">
                 <img src="img/choices.png" alt="">
                 <h2>Regionalne produkty</h2>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 box">
+            <div class="col-12 col-md-6 col-lg-3 box box-4">
                 <img src="img/online-shop.png" alt="">
                 <h2>Oszczędność czasu</h2>
             </div>
@@ -241,13 +306,14 @@
 
 <!--Paweł - Newsletter, podanie maila i imienia-->
 <section class="newsletter" id="newsletter">
-    <form class="form heading">
+    <form class="form heading newsletter-form">
         <h2>Zapisz się na <b>premierę!</b></h2>
         <form action="http://c-bula.pl/newsletter.php">
             <div class="form-row">
                 <div class="form-group col-md-6 col-sm-12">
                     <label for="inputName"></label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Twoje imię" required="required"
+                    <input type="text" name="inputName" class="form-control" id="inputName" placeholder="Twoje imię"
+                           required="required"
                            pattern="[A-ZŁŚŻ]{1}[a-z,ą,ę,ć,ń,ó,ś,ł]{2,15}"
                            title="Wprowadź poprawnie imię zaczynając od wielkiej litery (3-15 liter)">
                 </div>
@@ -416,11 +482,21 @@
     </div><!-- //end row -->
 </div>
 
+<!--Go to TOP-->
 <a href="#intro-slider" class="go-top" title="Go top" id="scroll-to-top"><img src="img/arrow-up.svg"
                                                                               alt="strzałka do góry"/></a>
+<!-- Cookies -->
+<div id="cookie" class="cookie">
+    <a href="#" class="cookie__x btn-form cookie__close">X</a>
+    <div class="cookie__wrapper">
+        <p class="cookie__text"><strong>Uwaga!</strong> Ta strona wykorzystuje ciasteczka!</p>
+        <button class="cookie__button cookie__close btn-form"><a href="#">Lubię ciasteczka :)</a></button>
+    </div>
+</div>
 
-<!--Footer-->
 
+
+<!-- Footer-->
 <footer class="page__footer">
     <div class="footer-style">
         <div class="container">
@@ -526,15 +602,17 @@
 
 </footer>
 
+
 <script src="./js/jquery-v3.3.1.min.js"></script>
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/carousel.js"></script>
 <script src="./js/smooth-scroll.js"></script>
 <script src="./js/animation_about-us.js"></script>
-
 <script src="./js/resize.js"></script>
-
+<script src="./js/game-start.js"></script>
+<script src="./js/scrollRevealBox.js"></script>
+<script src="./js/cookies.js"></script>
 <script src="./js/back-to-top.js"></script>
 
 </body>
