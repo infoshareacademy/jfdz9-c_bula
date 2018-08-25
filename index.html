@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>C-bula</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="img/cbula-favicon-01.png">
     <meta name="description" content="Aplikacja do robienia zakupów online w sklepach osiedlowych">
     <meta name="author" content="Tatiana Klenk - Łukasz Juchniewicz - Marta Pieńkowska - Paweł Nowicki">
@@ -78,39 +78,40 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand" href="#intro-slider"><img src="img/logo.png" alt="logo" style="height: 50px"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false">
-                    <a class="nav-link" href="#boxes">Cechy</a>
-                </li>
-                <li class="nav-item" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false">
-                    <a class="nav-link" href="#details">Szczegóły</a>
-                </li>
-                <li class="nav-item" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false">
-                    <a class="nav-link" href="#newsletter">Premiera</a>
-                </li>
-                <li class="nav-item" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false">
-                    <a class="nav-link" href="#about-us">O nas</a>
-                </li>
+<header class="navbar-large" id="navbar">
+    <nav class="navbar-container">
+        <div class="nav-items">
+            <a class="nav-logo" href="#intro-slider"><img id="logo" src="img/logo.png" alt="logo" style="height: 50px"></a>
+            <ul>
+                <li><a href="#boxes">cechy</a></li>
+                <li><a href="#details">szczegóły</a></li>
+                <li><a href="#newsletter">premiera</a></li>
+                <li><a href="#about-us">o nas</a></li>
             </ul>
         </div>
+    </nav>
+</header>
+<nav class="navbar-hamburger">
+    <div class="hamburger-toggle">
+        <div id="hamburger-icon">
+            <div class="hamburger-box">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
+    <ul class="open">
+        <li id="li-hamburger-logo"><a class="nav-logo" href="#intro-slider"><img src="img/logo.png" alt="logo" style=""></a></li>
+        <li id="li-hamburger-1"><a href="#boxes">cechy</a></li>
+        <li id="li-hamburger-2"><a href="#details">szczegóły</a></li>
+        <li id="li-hamburger-3"><a href="#newsletter">premiera</a></li>
+        <li id="li-hamburger-4"><a href="#about-us">o nas</a></li>
+        <li id="li-hamburger-5"></li>
+    </ul>
 </nav>
 <section class="intro">
     <div id="intro-slider" class="carousel slide intro-slider" data-ride="carousel">
@@ -481,8 +482,9 @@
     </div><!-- //end row -->
 </div>
 
-<a href="#" class="go-top" title="Go top" id="scroll-to-top"><img src="img/arrow-up.svg" alt="strzałka do góry"/></a>
-
+<!--Go to TOP-->
+<a href="#intro-slider" class="go-top" title="Go top" id="scroll-to-top"><img src="img/arrow-up.svg"
+                                                                              alt="strzałka do góry"/></a>
 <!-- Cookies -->
 <div id="cookie" class="cookie">
     <a href="#" class="cookie__x btn-form cookie__close">X</a>
@@ -491,6 +493,7 @@
         <button class="cookie__button cookie__close btn-form"><a href="#">Lubię ciasteczka :)</a></button>
     </div>
 </div>
+
 
 
 <!-- Footer-->
@@ -606,6 +609,7 @@
 <script src="./js/carousel.js"></script>
 <script src="./js/smooth-scroll.js"></script>
 <script src="./js/animation_about-us.js"></script>
+<script src="./js/resize.js"></script>
 <script src="./js/game-start.js"></script>
 <script src="./js/scrollRevealBox.js"></script>
 <script src="./js/cookies.js"></script>
