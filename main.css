@@ -83,7 +83,7 @@ body {
     -moz-transition: 0s all;
     -webkit-transition: 0s all;
     -o-transition: 0s all;
-    padding-bottom: 24px;
+    padding-bottom: 6px;
 
 }
 
@@ -93,7 +93,7 @@ body {
     -moz-transition: 0s all;
     -webkit-transition: 0s all;
     -o-transition: 0s all;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 
