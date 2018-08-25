@@ -77,13 +77,17 @@ body {
     font-size: 1rem;
 }
 
+.navbar-large span, .navbar-small span {
+    color: #969696;
+}
+
 .navbar-large li:active, .navbar-large li:hover {
     border-bottom: 4px solid #C6596F;
     transform: scale(1.05);
     -moz-transition: 0s all;
     -webkit-transition: 0s all;
     -o-transition: 0s all;
-    padding-bottom: 24px;
+    padding-bottom: 6px;
 
 }
 
@@ -93,7 +97,7 @@ body {
     -moz-transition: 0s all;
     -webkit-transition: 0s all;
     -o-transition: 0s all;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 
