@@ -49,13 +49,13 @@ li {
 .scoresinfo {
     font-size: 24px;
 }
-.playfield, .gameover, .instructions, .intro {
+.playfield, .gameover, .instructions, .intro, .highscores {
     position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
 }
-#playfield, #gameover, #instructions, #intro {
+#playfield, #gameover, #instructions, #intro, #highscores{
     position: absolute;
     top: -900px;
     left: 0;
@@ -107,14 +107,15 @@ h3 {
 }
 #playfield.current,
 #gameover.current,
+#highscores.current,
 #instructions.current,
 #intro.current {
-top: 0;
--webkit-transition: top 1s;
--moz-transition: top 1s;
--ms-transition: top 1s;
--o-transition: top 1s;
-transition: top 1s;
+    top: 0;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -ms-transition: top 1s;
+    -o-transition: top 1s;
+    transition: top 1s;
 }
 .characters li.introdeck {
     opacity: 0;
@@ -132,19 +133,21 @@ transition: top 1s;
 .onion, .sprite {
     height: 64px;
 }
-.characters .current, .characters .introdeck {
+.characters .current, .characters .introdeck, .characters .introdeck2 {
     width: 80%;
     margin: 5px auto;
     text-align: center;
     padding-top: 40px;
 }
+
+
+
 .characters .current ul {
     margin: 5px 0;
 }
 .characters .current li {
     display: inline;
     padding-right: 10px;
-    font-size: 18px;
 }
 .characters li.current {
     opacity: 1;
@@ -182,6 +185,10 @@ canvas {
     position: relative;
     color: #fff;
     padding-left: 20px;
+}
+
+#tasks{
+    font-size: 35px
 }
 
 #energy output, #score output {
@@ -246,7 +253,13 @@ canvas {
     text-align: right;
 }
 
-#characters button {
+/*#intro h1 {*/
+/*text-align: center;*/
+/*font-size: 30px;*/
+/*text-transform: uppercase;*/
+/*}*/
+
+#characters2 button, #characters button {
     background: #d9f90a;
     display: block;
     width: 50px;
@@ -294,3 +307,4 @@ canvas {
     background: -ms-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%);
     background: linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%);
 }
+
