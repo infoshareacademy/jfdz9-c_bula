@@ -1223,3 +1223,8 @@ body {
     text-decoration: none;
 }
 
+.sections-active{
+    border-bottom: 3px solid #C6596F;
+    transform: scale(1.05);
+}
+
