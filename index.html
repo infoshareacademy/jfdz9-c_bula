@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-v4.1.1.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="game/game-main.css" type="text/css">
 
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P" rel="stylesheet">
@@ -18,25 +19,32 @@
 
 </head>
 <body>
+
 <header class="navbar-large" id="navbar">
     <nav class="navbar-container">
         <div class="nav-items">
             <a class="nav-logo" href="#intro-slider"><img id="logo" src="img/logo.png" alt="logo" style="height: 50px"></a>
             <ul>
-                <li><a href="#boxes">cechy</a></li>
-                <li><a href="#details">szczegóły</a></li>
-                <li><a href="#newsletter">premiera</a></li>
-                <li><a href="#about-us">o nas</a></li>
+                <li><a href="#boxes">
+                    <span lang="pl">CECHY</span> <span lang="en">FEATURES</span>
+                </a></li>
+                <li><a href="#details"><span lang="pl">SZCZEGÓŁY</span> <span lang="en">DETAILS</span>
+                </a></li>
+                <li><a href="#newsletter"><span lang="pl">PREMIERA</span> <span lang="en">PREMIERE</span>
+                </a></li>
+                <li><a href="#about-us"><span lang="pl">O NAS</span> <span lang="en">ABOUT US</span>
+                </a></li>
                 <li><a id="switch-lang">
-                        <span lang="pl">English</span>
-                        <span lang="en">polski</span>
-                    </a>
+                    <span lang="pl">English</span>
+                    <span lang="en">polski</span>
+                </a>
                 </li>
 
             </ul>
         </div>
     </nav>
 </header>
+
 <nav class="navbar-hamburger">
     <div class="hamburger-toggle">
         <div id="hamburger-icon">
@@ -61,13 +69,18 @@
 <section class="intro">
     <div id="intro-slider" class="carousel slide intro-slider" data-ride="carousel">
         <div class="carousel-caption">
-            <h1>Blisko Szybko Świeżo</h1>
-            <p class="d-none d-md-block">Dzięki aplikacji zrobisz zakupy w ulubionych sklepikach osiedlowych
-                niewychodząc z domu.
-                <br/> Ty wybierasz, My zajmiemy się resztą.</p>
+            <h1><span lang="pl">Blisko Szybko Świeżo</span> <span lang="en">Close Fast Fresh</span></h1>
+            <p class="d-none d-md-block">
+               <span lang="pl">Dzięki aplikacji zrobisz zakupy w ulubionych sklepikach osiedlowych
+               niewychodząc z domu.<br/> Ty wybierasz, My zajmiemy się resztą.</span>
+                <span lang="en">Thanks to this application you will shop in local shops</br> without leaving your house<br/>
+                   You choose - we do the rest</span>
+            </p>
+
             <div class="intro-btn">
                 <a href="#newsletter">
-                    <span class="text">Sprawdź</span>
+                    <span class="text" lang="pl">Sprawdź</span>
+                    <span class="text" lang="en">see more</span>
                     <span class="line -right"></span>
                     <span class="line -top"></span>
                     <span class="line -left"></span>
@@ -96,39 +109,38 @@
         </a>
     </div>
 </section>
-
 <!-- Lukasz 4 boxes icons-->
 <section class="functionality sections" id="boxes">
     <div class="heading">
-        <h2><strong>Cechy</strong> aplikacji</h2>
+        <h2><span lang="pl"><strong>Cechy</strong> aplikacji</span> <span lang="en">App's<strong> features</strong></span></h2>
     </div>
     <div class="container">
         <div class="row load-hidden">
             <div class="col-12 col-md-6 col-lg-3 box box-1">
                 <img src="img/grocery%20.png" alt="">
-                <h2>Łatwe zakupy</h2>
+                <h2><span lang="pl">Łatwe zakupy</span> <span lang="en">Easy shoping</span></h2>
             </div>
             <div class="col-12 col-md-6 col-lg-3 box box-2">
                 <img src="img/delivery.png" alt="">
-                <h2>Dostawa do domu</h2>
+                <h2><span lang="pl">Dostawa do domu</span> <span lang="en">Home delivery</span></h2>
             </div>
             <div class="col-12 col-md-6 col-lg-3 box box-3">
                 <img src="img/choices.png" alt="">
-                <h2>Regionalne produkty</h2>
+                <h2><span lang="pl">Regionalne produkty</span> <span lang="en">Local products</span></h2>
             </div>
             <div class="col-12 col-md-6 col-lg-3 box box-4">
                 <img src="img/online-shop.png" alt="">
-                <h2>Oszczędność czasu</h2>
+                <h2><span lang="pl">Oszczędność czasu</span> <span lang="en">Time saver</span></h2>
             </div>
         </div>
     </div>
 </section>
-
 <!--SZCZEGÓŁY - 8 funkcjonalności-->
 <section class="details sections" id="details">
     <div class="container">
         <div class="heading">
-            <h2>Dlaczego zakupy z <strong> C-BULA</strong>?</h2>
+            <!--  <h2>Dlaczego zakupy z <strong> C-BULA</strong>?</h2>-->
+            <h2><span lang="pl">Dlaczego zakupy z <strong> C-BULA</strong></span> <span lang="en">Why<strong> C-BULA?</strong></span>
         </div>
         <div class="row justify-content-center ">
             <div class="col-sm-12">
@@ -137,7 +149,9 @@
                         <div class="row item">
                             <div class="col-2"><span class="details-icon"><img src="img/grocery%201.png"></span>
                             </div>
-                            <div class="col-6"><p class="sub-title">Łatwe zakupy</p></div>
+                            <div class="col-6"><p class="sub-title"><span lang="pl">Łatwe zakupy</span>
+                                <span lang="en">Easy shopping</span>
+                            </p></div>
                             <div class="description">
                                 <p class="description-text">Kupowanie online jest bardzo proste a zakupy zrobisz
                                     bardziej przemyslane i
@@ -150,7 +164,9 @@
                         <div class="row item">
                             <div class="col-2"><span class="details-icon"><img src="img/checklist.png"></span>
                             </div>
-                            <div class="col-6"><p class="sub-title">Regionalne produkty</p></div>
+                            <div class="col-6"><p class="sub-title"><span lang="pl">Regionalne produkty</span>
+                                <span lang="en">Local products</span>
+                            </p></div>
                             <div class="description">
                                 <p class="description-text">W ofertach małych sklepików znajdziesz żywność ekologiczną,
                                     pochodzącą od
@@ -164,7 +180,10 @@
                         <div class="row item">
                             <div class="col-2"><span class="details-icon"><img src="img/fruit.png"></span>
                             </div>
-                            <div class="col-6"><p class="sub-title">Świeże produkty</p></div>
+                            <div class="col-6"><p class="sub-title">
+                                <span lang="pl">Świeże produkt</span>
+                                <span lang="en">Fresh products</span>
+                            </p></div>
                             <div class="description">
                                 <p class="description-text">Nie bez znaczenia jest jakość towaru. Każdy docenia świeżość
                                     pieczywa, owoców i
@@ -179,7 +198,10 @@
                         <div class="row item">
                             <div class="col-2"><span class="details-icon"><img src="img/map-location.png"></span>
                             </div>
-                            <div class="col-6"><p class="sub-title">"Tu mieszkam,<br> Tu kupuję"</p></div>
+                            <div class="col-6"><p class="sub-title">
+                                <span lang="pl"> "Tu mieszkam,<br> Tu kupuję"</span>
+                                <span lang="en">Supporting local shops</span>
+                            </p></div>
                             <div class="description">
                                 <p class="description-text">Ogólnopolski program społeczny, promuje i wspiera osiedlowe
                                     sklepy o zasięgu lokalnym
@@ -193,7 +215,10 @@
                         <div class="row item">
                             <div class="col-2"><span class="details-icon"><img src="img/delivery2.png"></span>
                             </div>
-                            <div class="col-6"><p class="sub-title">Dostawa dodomu</p></div>
+                            <div class="col-6"><p class="sub-title">
+                                <span lang="pl">Dostawa do domu</span>
+                                <span lang="en">Home delivery</span>
+                            </p></div>
                             <div class="description">
                                 <p class="description-text">Masz już dosyć dźwigania ciężkich kartonów i butelek na 4
                                     piętro? Czemu nie miałby Ci
@@ -207,7 +232,10 @@
                         <div class="row item">
                             <div class="col-2"><span class="details-icon"><img src="img/online-shop1.png"></span>
                             </div>
-                            <div class="col-6"><p class="sub-title">Oszczędność czasu</p></div>
+                            <div class="col-6"><p class="sub-title">
+                                <span lang="pl">Oszczędność czasu</span>
+                                <span lang="en">Time saver</span>
+                            </p></div>
                             <div class="description">
                                 <p class="description-text">Nie tracisz pieniędzy i czasu na dojazd, zwiedzanie marketu
                                     i stania w długich
@@ -221,7 +249,10 @@
                         <div class="row item">
                             <div class="col-2"><span class="details-icon"><img src="img/smartphone.png"></span>
                             </div>
-                            <div class="col-6"><p class="sub-title">Łatwa obsługa aplikacji</p></div>
+                            <div class="col-6"><p class="sub-title">
+                                <span lang="pl">Łatwa obsługa aplikacji</span>
+                                <span lang="en">User friendly app</span>
+                            </p></div>
                             <div class="description">
                                 <p class="description-text">Aplikacja działa na różnych urządzeniach, tj. telefonach,
                                     tabletach czy laptopach.
@@ -234,7 +265,10 @@
                         <div class="row item">
                             <div class="col-2"><span class="details-icon"><img src="img/help.png"></span>
                             </div>
-                            <div class="col-6"><p class="sub-title">pomagaj z nami</p></div>
+                            <div class="col-6"><p class="sub-title">
+                                <span lang="pl">pomagaj z nami</span>
+                                <span lang="en">charity</span>
+                            </p></div>
                             <div class="description">
                                 <p class="description-text">Pomagaj! Jak? Kupione przez ciebie produkty zostaną
                                     przekazane potrzebującym. Więcej
@@ -251,7 +285,7 @@
 <!--Paweł - Newsletter, podanie maila i imienia-->
 <section class="newsletter sections" id="newsletter">
     <form class="form heading newsletter-form">
-        <h2>Zapisz się na <b>premierę!</b></h2>
+        <h2><span lang="pl">Zapisz się na <b>premierę!</b></span> <span lang="en">Sign up to our <b>premiere!</b></span></h2>
         <form action="http://c-bula.pl/newsletter.php">
             <div class="form-row">
                 <div class="form-group col-md-6 col-sm-12">
@@ -282,17 +316,20 @@
                 </div>
             </div>
             <div class="form-buttons">
-                <button type="submit" class="btn-form">Wyślij</button>
-                <button type="reset" class="btn-form">Wyczyść</button>
+                <button type="submit" class="btn-form"><span lang="pl">Wyślij</span> <span lang="en">Send</span>
+                </button>
+                <button type="submit" class="btn-form"><span lang="pl">Wyczyść</span> <span lang="en">Clear</span>
+                </button>
             </div>
         </form>
     </form>
 </section>
+
 <!--Lukasz - ABOUT US-->
 
 <div class="container about-us sections" id="about-us">
     <div class="heading">
-        <h2>Zespół <strong>C-Bula</strong></h2>
+        <h2><span lang="pl">Zespół <strong>C-Bula</strong></span> <span lang="en"><strong>C-Bula</strong> team</span>
     </div>
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4">
@@ -438,14 +475,14 @@
     </div>
 </div>
 
-
 <!-- Footer-->
 <footer class="page__footer">
     <div class="footer-style">
         <div class="container">
             <div class="row py-4 d-flex align-items-center">
                 <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                    <h6 class="mb-0">Dołącz do nas na portalach społecznościowych!</h6>
+                    <h6 class="mb-0"><span lang="pl">Dołącz do nas na portalach społecznościowych!</span> <span lang="en">Join us!</span>
+                    </h6>
                 </div>
                 <div class="col-md-6 col-lg-7 text-center text-md-right">
 
@@ -476,23 +513,34 @@
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-12">
                     <h6 class="footer__content">C-BULA</h6>
                     <hr class="deep-purple accent-2 mb-12 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>BLISKO SZYBKO ŚWIEŻO</p>
-                </div>
+               <!--     <p>BLISKO SZYBKO ŚWIEŻO</p>
+                </div>-->
+<!--kkk-->
+                <p><span lang="pl">BLISKO SZYBKO SWIEZO</span> <span lang="en">CLOSE FAST FRESH</span>
+                </p>
+            </div>
 
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-12">
-                    <h6 class="footer-useful-links">Przydatne</h6>
-                    <hr class="deep-purple accent-2 mb-12 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="#">Regulamin</a>
-                    </p>
-                    <p>
-                        <a href="#">FAQ</a>
-                    </p>
-                </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-12">
+                <h6 class="footer-useful-links">
+                    <span lang="pl">Przydatne</span> <span lang="en">Useful links</span>
+                </h6>
+                <hr class="deep-purple accent-2 mb-12 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="#">
+                        <span lang="pl">Regulamin</span> <span lang="en">Terms and conditions</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <span lang="pl">FAQ</span> <span lang="en">FAQ</span>
+                    </a>
+                </p>
+            </div>
 
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-12">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-12">
 
-                    <h6 class="footer-contact">Kontakt</h6>
+                <h6 class="footer-contact"><span lang="pl">Kontakt</span> <span lang="en">Contact</span></h6>
+
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
                         <i class="fa fa-home mr-1.9"></i>al. Grunwaldzka 472B, Gdańsk</p>
@@ -524,6 +572,7 @@
 <script src="./js/cookies.js"></script>
 <script src="./js/back-to-top.js"></script>
 <script src="./js/menuhover.js"></script>
+<script src="./js/translation.js"></script>
 
 </body>
 
