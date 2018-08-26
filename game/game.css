@@ -103,7 +103,7 @@ li {
 }
 h3 {
     font-size: 22px;
-    padding: 10px;
+    padding: 15px;
 }
 #playfield.current,
 #gameover.current,
@@ -207,7 +207,6 @@ canvas {
 }
 .instructionbutton:hover, .highscoresbutton:hover {
     cursor: pointer;
-    /*font-size: 47px;*/
     transform: scale(1.04);
     transition: ease-in-out;
 }
@@ -220,8 +219,6 @@ canvas {
 .container p {
     text-align: center;
     margin-top: 50px;
-    font-size: 24px;
-    padding-top: 40px;
 }
 #intro h1 span {
     /*text-indent: -2000px;*/
@@ -230,7 +227,9 @@ canvas {
     height: 102px;
     display: block;
 }
-
+.text-arrow {
+    font-size: 35px;
+}
 #gameover h1 {
     background: url(img/gameover03.gif) no-repeat center;
     padding-top: 100px;
@@ -253,11 +252,6 @@ canvas {
     text-align: right;
 }
 
-/*#intro h1 {*/
-/*text-align: center;*/
-/*font-size: 30px;*/
-/*text-transform: uppercase;*/
-/*}*/
 
 #characters2 button, #characters button {
     background: #d9f90a;
@@ -268,19 +262,36 @@ canvas {
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     float: right;
+    font-weight: bold;
+    font-size: 27px;
 }
 #gameover button {
     background: #d9f90a;
     flex-direction: row;
     text-align: center;
     display: block;
-    width: 100px;
-    height: 100px;
     background: linear-gradient(top, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%);
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
     border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    font-size: 18px;
 }
 
+#gameover button:hover {
+    transform: perspective(1px) translateZ(0);
+    animation-name: startanim;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+.replay {
+    margin: 100px 0 0 100px;
+}
+.back-to-website {
+    margin: 50px 0 0 300px;
+}
 #intro button:hover, #intro button:focus, #gameover button:hover, #gameover button:focus {
     box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.7);
 }

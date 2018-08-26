@@ -37,12 +37,12 @@
     </section>
 
     <section id="instructions" class="instructions">
-        <ul id="characters" class="characters" data-countstart="1" data-newsprite="500">
+        <ul id="characters" class="characters" data-countstart="1" data-newsprite="50">
             <li class="introdeck">
                 <p>
                     <button class="endinstructions">X</button>
                 </p>
-                <h3>Aby przesunąć <img src="game/img-game/basket6.png" alt="basket" id="player" class="player" data-increase="5"> używaj strzałek ← → na klawiaturze <span id="orientation"></span></h3>
+                <h3>Aby przesunąć <img src="game/img-game/basket6.png" alt="basket" id="player" class="player" data-increase="5"> używaj strzałek <span class="text-arrow">← →</span> na klawiaturze <span id="orientation"></span></h3>
                 <h3>Zbieraj warzywa i zdobywaj punkty:</h3>
                 <ul>
                     <li><img src="game/img-game/onion.png"  class="sprite onion" alt="Onion" data-collision="energy:5" data-type="good"> +5 pkt</li>
@@ -76,7 +76,7 @@
     <section id="playfield" class="playfield">
         <div id="scoresinfo" class="scoresinfo">
             <div id="energy" class="energy">Energia
-                <output>50</output>
+                <output>30</output>
             </div>
             <div id="score" class="score">Wynik
                 <output></output>
@@ -92,11 +92,16 @@
         </p>
         <p class="message" data-highscore="Nowy rekord!"></p>
         <p>
-            <button id="replay" class="replay">Zagraj jeszcze raz</button>
+            <button id="replay" class="replay">Zagraj<br>jeszcze<br>raz</button>
+        </p>
+        <p>
+            <button type="button" id="back-to-website" class="back-to-website">Powrót na stronę <br>C-Bula</button>
         </p>
     </section>
 </div>
 <script src="game/game-main.js"></script>
 <script src="game/highscores.js"></script>
+
+
 </body>
 </html>

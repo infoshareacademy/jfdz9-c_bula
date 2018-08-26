@@ -331,3 +331,15 @@ Highscores
         init();
     })();
 
+
+    (function () {
+        var backToWebsite = document.getElementById('back-to-website');
+
+            backToWebsite.on('click', function (event) {
+            event.preventDefault();
+
+            window.location = "index.html";
+        });
+
+
+    })();
